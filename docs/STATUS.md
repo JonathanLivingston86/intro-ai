@@ -8,10 +8,11 @@ Ultimo aggiornamento: 26 novembre 2026.
 - [ ] Confermare l'offerta "porta una collega" così come scritta nella slide dei workshop.
 - [ ] Decidere l'immagine del notebook per la slide del sopralluogo (privacy dei nomi dei clienti).
 - [ ] Controllo di Andrea sulle immagini: interno, esterno e tre foto della slide workshop.
-- [ ] Pubblicazione su GitHub Pages (solo con ok di Andrea): repository `JonathanLivingston86/intro-ai`.
 - [ ] Prova dal vivo: proiettore, Wi-Fi della sede, QR e Copia dal telefono, gioco del 17 la mattina stessa.
 
 ## Completate
+
+- [x] Pubblicato il 26/11/2026 su https://jonathanlivingston86.github.io/intro-ai/ (repository pubblico `JonathanLivingston86/intro-ai`, GitHub Pages dal ramo `main`) | prova: build "built"; pagina, report, QR, render della pianta e video rispondono 200, il video accetta le richieste parziali (206); `kit-presentatore/` e `materiali-privati/` danno 404.
 
 - [x] Slide 30: pianta di un bilocale di 55,1 m² ridisegnata in misure reali e approvata da Andrea il 26/11; render fotorealistico dall'alto con Nano Banana al primo tentativo, con cursore prima/dopo e prompt copiabile | prova: dentro l'appartamento coincide l'85% dei contorni e l'80% della superficie dei muri; controllo stanza per stanza senza arredi o sanitari in più; impaginazione 0 problemi a 1024x768, 1280x720, 1920x1080; telefono senza scorrimento orizzontale. Originali in `materiali-privati/Generazioni Nano Banana/`.
 
