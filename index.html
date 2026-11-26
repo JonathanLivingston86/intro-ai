@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Intro AI Literacy | Workshop</title>
+<meta name="description" content="Slide, prompt e fonti del workshop Intro AI Literacy per architetti e designer.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="presenter">
+<main id="deck">
+
+<!-- 1 · LINK E QR -->
+<section class="slide" data-title="Segui da qui">
+  <div class="in linkslide">
+    <p class="eyebrow">Intro AI Literacy | Workshop</p>
+    <h1>Segui da qui.</h1>
+    <p class="lead">Apri il link o inquadra il codice. Trovi le slide, i prompt da copiare e le fonti di ogni numero.</p>
+    <img class="qr" src="assets/qr.png" alt="Codice QR per aprire il deck">
+    <p class="url">jonathanlivingston86.github.io/intro-ai</p>
+  </div>
+</section>
+
+<!-- 2 · TITOLO -->
+<section class="slide dark" data-title="Intro AI Literacy">
+  <div class="in titolo">
+    <div class="titolo-txt">
+      <p class="eyebrow">Workshop</p>
+      <h1 class="hero">Intro AI<br>Literacy.</h1>
+      <p class="lead big">Una mappa dell'intelligenza artificiale per chi progetta.</p>
+      <p class="small mt">Andrea Lucarelli | ai.andrealucarelli.com</p>
+    </div>
+    <figure class="titolo-foto"><img src="assets/img/andrea-bn.jpg" alt="Andrea Lucarelli"></figure>
+  </div>
+</section>
+
+<!-- 3 · SONO IMBARAZZATO -->
+<section class="slide dark" data-title="Sono imbarazzato">
+  <div class="in">
+    <h1 class="hero">Sono<br>imbarazzato.</h1>
+  </div>
+  <div class="extra">
+    <h4>Come leggere questa dispensa</h4>
+    <p>Ogni slide ha sotto le note e le fonti. I numeri hanno sempre una data: in questo settore una notizia vale qualche settimana. Dove una cifra arriva da una fonte secondaria lo trovi scritto.</p>
+  </div>
+</section>
+
+<!-- ===================== 01 · DOVE SIAMO ===================== -->
+
+<!-- 4 · GIOCO: QUANTI LA USANO -->
+<section class="slide dark" data-title="Secondo te: quanti la usano?">
+  <div class="in">
+    <p class="eyebrow">01 | Dove siamo</p>
+    <h2 class="domanda">Su 100 persone al mondo, quante usano l'AI?</h2>
+  </div>
+  <div class="extra">
+    <h4>Perché ti chiedo di indovinare</h4>
+    <p>Provare a rispondere prima di vedere la soluzione fa ricordare meglio la risposta giusta, anche quando la prima ipotesi è sbagliata. Lo raccontano Brown, Roediger e McDaniel in <i>Make It Stick</i> (cap. 4).</p>
+  </div>
+</section>
+
+<!-- 5 · MAPPA A PUNTINI -->
+<section class="slide" data-title="La mappa a puntini" data-steps="1">
+  <div class="in arioso">
+    <p class="eyebrow">01 | Dove siamo</p>
+    <div class="mappa">
+      <div class="mappa-txt">
+        <h2>Ogni puntino sono 3,3 milioni di persone.</h2>
+        <p class="lead stepcap"><span>Febbraio 2026: il 16% usava un chatbot gratis. Chi pagava era lo 0,3%, chi usava un agente lo&nbsp;0,04%.</span><span>Novembre 2026: chi usa un chatbot gratis è salito al 28%. Chi paga è l'1%, chi fa lavorare un agente lo&nbsp;0,4%.</span></p>
+        <ul class="legenda">
+          <li><i style="background:#8e8e93"></i>Offline</li>
+          <li><i style="background:#e5e5ea"></i>Online, senza AI</li>
+          <li><i style="background:#30a46c"></i>Chatbot gratis</li>
+          <li><i style="background:#f5a623"></i>Abbonamento</li>
+          <li><i style="background:#e5484d"></i>Agenti</li>
+        </ul>
+        <p class="small" data-step="1">Se oggi apri un abbonamento sei nell'1% del pianeta.</p>
+      </div>
+      <svg class="puntini" role="img" aria-label="Griglia di 2.500 puntini che mostra quante persone al mondo usano l'AI"></svg>
+    </div>
+  </div>
+  <div class="extra">
+    <h4>I numeri</h4>
+    <table>
+      <tr><th>Gruppo</th><th>Febbraio 2026</th><th>Novembre 2026</th></tr>
+      <tr><td>Offline</td><td>circa 27%</td><td>circa 27%</td></tr><tr><td>Online, senza AI generativa</td><td>circa 57%</td><td>circa 44%</td></tr>
+      <tr><td>Usa chatbot gratuiti</td><td>circa 16%</td><td>circa 28%</td></tr>
+      <tr><td>Paga un abbonamento</td><td>circa 0,3%</td><td>circa 1% (circa 80 milioni di persone, stima)</td></tr>
+      <tr><td>Usa agenti di programmazione</td><td>circa 0,04%</td><td>circa 0,4% (circa 30 milioni, stima)</td></tr>
+    </table>
+    <h4>Fonti</h4>
+    <ul>
+      <li>Febbraio 2026: grafico virale "Each dot is ~3.2 million people", circolato su X a febbraio 2026 e usato nel workshop di marzo. Autore originale non rintracciato: trattalo come stima. Il grafico non separava chi è offline: per confrontare le due date ho usato per febbraio la stessa quota di persone offline di novembre (circa 27%, base ITU). È un dato che cambia di circa un punto all'anno, quindi il confronto regge.</li>
+      <li>Novembre 2026: Finn Hillebrandt, <a href="https://www.gradually.ai/en/ai-statistics/">gradually.ai, AI Statistics 2026</a>, aggiornato il 21 novembre 2026. Base: DataReportal e ITU; abbonati e utenti di agenti sono stime dell'autore.</li>
+      <li>Un secondo conteggio: Simon Kemp, <a href="https://datareportal.com/reports/digital-2027-ai-use-around-the-world">DataReportal, Digital 2027: AI use around the world</a>, 21 ottobre 2026. Stima 3,24 miliardi di utenti dell'AI generativa, il 38,9% del mondo, con una crescita del 57% in un anno. Metodi diversi danno cifre diverse: anche i numeri sull'AI vanno controllati.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 6 · WILL SMITH: INTRODUZIONE -->
+<section class="slide dark" data-title="Lo stesso video, tre anni dopo">
+  <div class="in">
+    <p class="eyebrow">01 | Dove siamo</p>
+    <h2>Lo stesso video, a tre anni di distanza.</h2>
+    <p class="lead big">Nel 2023 un video generato di Will Smith che mangia gli spaghetti faceva ridere. Da allora è il test con cui si misurano i generatori di&nbsp;video.</p>
+  </div>
+</section>
+
+<!-- 7 · WILL SMITH: VIDEO -->
+<section class="slide dark cinema" data-title="Will Smith e gli spaghetti">
+  <video class="film" src="assets/video/spaghetti-2023-2026.mp4" poster="assets/video/spaghetti-poster.jpg" muted loop playsinline controls preload="auto" data-interactive></video>
+  <div class="extra">
+    <h4>Il test degli spaghetti</h4>
+    <p>Dal 2023 il video di Will Smith che mangia gli spaghetti è diventato un metro informale per misurare i generatori di video. Nel febbraio 2024 lo stesso Will Smith ne ha fatto una parodia su Instagram.</p>
+    <ul>
+      <li>Video proiettato: <a href="https://www.youtube.com/watch?v=g_31_Kj0-NE">"Will Smith eating spaghetti 2026"</a> su YouTube, tagliato prima del cartello finale. Le etichette degli anni sono dell'autore del montaggio. Parte da solo senza audio; l'audio e il cursore sono nei comandi del video.</li>
+      <li>Montaggio anno per anno di @gelorria su X, 7 giugno 2026: <a href="https://twitter.com/gelorria/status/2063442691518529748">x.com/gelorria</a>.</li>
+      <li><a href="https://en.wikipedia.org/wiki/Will_Smith_eating_spaghetti_test">Wikipedia, Will Smith eating spaghetti test</a>; Forbes, 11 febbraio 2026, su Seedance 2.0; Forbes, 22 maggio 2025, su Veo 3.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 7 · PERDEREMO IL LAVORO -->
+<section class="slide" data-title="Perderemo il lavoro?" data-steps="3">
+  <div class="in dense">
+    <p class="eyebrow">01 | Dove siamo</p>
+    <h2>Perderemo il lavoro?</h2>
+    <div class="rischio">
+      <div class="gauge" data-step="1"><b>34%</b><span>quello che pensa la gente</span><small>sondaggio sul sito, 1.013 voti</small></div>
+      <div class="gauge blu" data-step="2"><b>19%</b><span>quello che dicono i dati</span><small>rischio calcolato: "minimo"</small></div>
+      <div class="conta" data-step="3">
+        <h3>Cosa conta davvero</h3>
+        <ul class="chip-lista">
+          <li>Creatività</li>
+          <li>Decisioni</li>
+          <li>Rapporto con il cliente</li>
+          <li>Negoziazione</li>
+        </ul>
+        <p>Sono le capacità che il sito segna come "molto importanti" per l'architetto. L'AI non le sostituisce.</p>
+      </div>
+    </div>
+    <p class="fonte"><img src="assets/loghi/willrobots.png" alt="">Fonte: Will Robots Take My Job, scheda "Architects", letta il 25 novembre 2026</p>
+  </div>
+  <div class="extra">
+    <h4>Fonte</h4>
+    <p><a href="https://willrobotstakemyjob.com/architects-except-landscape-and-naval">Will Robots Take My Job, Architects (except landscape and naval)</a>, letta il 25 novembre 2026. Rischio di automazione calcolato 19% ("Minimal Risk"); sondaggio degli utenti 34% su 1.013 voti; crescita dell'occupazione prevista +4,3% al 2035 (dati del Bureau of Labor Statistics, Stati Uniti). Il sito unisce statistiche ufficiali americane e voti degli utenti: utile come termometro, non come previsione.</p>
+    <p>Chi lavora sui compiti ripetitivi (copiare dati, impaginare, rifare tavole simili) è più esposto di chi decide e parla con il cliente.</p>
+  </div>
+</section>
+
+<!-- 8 · LA PROFESSIONE -->
+<section class="slide" data-title="La professione in numeri" data-steps="1">
+  <div class="in dense">
+    <p class="eyebrow">01 | Dove siamo</p>
+    <h2>Il vero problema sono i redditi.</h2>
+    <div class="cols2 prof">
+      <div class="panel">
+        <h3>Reddito medio annuo 2024</h3>
+        <svg class="vis barre" viewBox="0 0 520 220" role="img" aria-label="Reddito medio 2024: ingegneri 64.269 euro, architetti uomini 45.761, architette 27.658, architette al Sud 22.026">
+          <g><rect x="0" y="10" width="440" height="38" rx="6" fill="#d2d2d7"/><text x="12" y="35" font-size="16" font-weight="600" fill="#1d1d1f">Ingegneri | 64.269 €</text></g>
+          <g><rect x="0" y="62" width="313" height="38" rx="6" fill="#6e6e73"/><text x="12" y="87" font-size="16" font-weight="600" fill="#fff">Architetti | 45.761 €</text></g>
+          <g><rect x="0" y="114" width="189" height="38" rx="6" fill="#0071e3"/></g><text x="200" y="139" font-size="16" font-weight="700" fill="#0071e3">Architette | 27.658 €</text>
+          <g><rect x="0" y="166" width="151" height="38" rx="6" fill="#0071e3" opacity=".6"/></g><text x="162" y="191" font-size="16" font-weight="600" fill="#1d1d1f">Architette al Sud | 22.026 €</text>
+        </svg>
+        <p class="small">Un'architetta guadagna il 40% meno di un collega uomo. Un architetto over 40, in euro di oggi, il 12% meno che nel&nbsp;2007.</p>
+      </div>
+      <div class="report-box" data-step="1">
+        <p class="eyebrow">Da leggere a casa</p>
+        <h3>Il report sulla professione, aggiornato a novembre 2026.</h3>
+        <div class="report-qr"><img class="qr" src="assets/qr-report.png" alt="Codice QR per aprire il report"><p class="cardtxt">Numeri, norme che cambiano il mercato, le nicchie che crescono e un piano per&nbsp;attaccarle.</p></div>
+        <p class="url"><a href="report/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">…/intro-ai/report</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="extra">
+    <h4>Fonti</h4>
+    <ul>
+      <li>Inarcassa, <a href="https://www.inarcassa.it/sites/default/files/legacy/documents/2025-06/Inarcassa_in_Cifre_2025.pdf">Inarcassa in cifre 2026</a>, 25 giugno 2026 (i redditi 2024 sono gli ultimi disponibili: quelli del 2025 si dichiarano nel 2026 e Inarcassa li pubblica a metà 2027), tabella 14a (redditi 2024 dei liberi professionisti iscritti): architetti 38.192 € (uomini 45.761, donne 27.658), ingegneri 64.269 €; architette al Sud 22.026 €. Tabella 14b: reddito medio degli architetti over 40 in euro costanti 2024, 42.624 € contro 48.370 € del 2007 (meno 12%).</li>
+      <li>Iscritti agli albi nel 2025: 159.769 architetti, di cui 70.944 donne; solo 91.320 (il 57%) sono liberi professionisti iscritti a Inarcassa (tabella 1a).</li>
+      <li>CNAPPC e Format Research, <a href="https://www.professionearchitetto.it/news/notizie/33819/professione-e-disparita-di-genere-le-architette-svantaggiate-per-reddito-contratti-e-mansioni">"La condizione femminile nell'architettura italiana"</a>, 5 marzo 2026: discriminazioni percepite dal 78% delle libere professioniste.</li>
+    </ul>
+    <p>Il report completo è in <a href="report/">report/</a>.</p>
+  </div>
+</section>
+
+<!-- ===================== 02 · COME FUNZIONA ===================== -->
+
+<!-- 9 · GLOSSARIO -->
+<section class="slide" data-title="Cinque parole" data-steps="5">
+  <div class="in dense">
+    <p class="eyebrow">02 | Come funziona</p>
+    <h2>Cinque parole per capire tutto il resto.</h2>
+    <div class="gloss">
+      <ol class="gloss-lista">
+        <li data-step="1">Intelligenza</li>
+        <li data-step="2">Semantica</li>
+        <li data-step="3">Deterministico</li>
+        <li data-step="4">Probabilistico</li>
+        <li data-step="5">Epistemia</li>
+      </ol>
+      <div class="gloss-scheda">
+        <div data-step="1" data-until="2"><b>Intelligenza</b><p>Riconoscere schemi che si ripetono e prevedere il prossimo. Vale per il cervello umano e per&nbsp;l'AI.</p><small>Esempio: dopo "c'era una" il tuo cervello aspetta "volta".</small></div>
+        <div data-step="2" data-until="3"><b>Semantica</b><p>Il significato delle parole e il peso che prendono nel contesto.</p><small>"Pianta" in uno studio di architettura e in un vivaio.</small></div>
+        <div data-step="3" data-until="4"><b>Deterministico</b><p>Stesso ingresso, sempre la stessa uscita.</p><small>La calcolatrice: 3 + 2 fa 5 un miliardo di volte.</small></div>
+        <div data-step="4" data-until="5"><b>Probabilistico</b><p>Stesso ingresso, uscita probabile ma non certa.</p><p class="riga">Da qui nascono errori e invenzioni.</p><small>Chiedi due volte la stessa cosa all'AI: due risposte diverse.</small></div>
+        <div data-step="5"><b>Epistemia</b><p>Quando una frase plausibile prende il posto della verifica: ci sembra di sapere, ma non abbiamo&nbsp;controllato.</p><small>Una risposta scritta bene e sicura di sé non è per forza giusta.</small></div>
+      </div>
+    </div>
+  </div>
+  <div class="extra">
+    <h4>Le definizioni complete</h4>
+    <ul>
+      <li><b>Intelligenza</b>: capacità di riconoscere, interpretare e prevedere schemi (in inglese <i>pattern</i>) in dati, ambienti o stimoli.</li>
+      <li><b>Semantica</b>: la parte della linguistica che studia il significato. Un modello linguistico "pesa" ogni parola in base alle altre.</li>
+      <li><b>Deterministico</b>: date le stesse condizioni iniziali, il risultato è sempre lo stesso.</li>
+      <li><b>Probabilistico</b>: il risultato ha una probabilità, non una certezza. Spiega le allucinazioni, cioè risposte inventate ma plausibili.</li>
+      <li><b>Epistemia</b>: termine proposto dal gruppo di Walter Quattrociocchi (Sapienza Università di Roma). Nel paper <a href="https://arxiv.org/abs/2512.19466">"Epistemological Fault Lines Between Human and Artificial Intelligence"</a> (Quattrociocchi, Capraro, Perc, dicembre 2025) è la condizione in cui la plausibilità linguistica sostituisce la valutazione epistemica e dà la sensazione di sapere senza il lavoro del giudizio. Vedi anche Loru e altri, "The simulation of judgment in LLMs", PNAS 2025.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 10 · GIOCO DEL 17 -->
+<section class="slide dark" data-title="Il gioco del numero" data-steps="1">
+  <div class="in center">
+    <p class="eyebrow">Gioco | prendi il telefono</p>
+    <h2>Scrivi questa frase alla tua&nbsp;AI.</h2>
+    <p class="frase-esempio">"Dimmi un numero casuale da 1 a 25. Rispondi solo con&nbsp;il&nbsp;numero."</p>
+    <div class="numerone" data-step="1">17</div>
+    <p class="lead big" data-step="1">Non sceglie a caso: scrive il numero più&nbsp;probabile.</p>
+  </div>
+  <div class="extra">
+    <h4>Prova fatta il 25 novembre 2026</h4>
+    <p>ChatGPT (chat temporanea, impostazione predefinita) ha risposto 17 in tutte le prove; Gemini ha risposto 17 alla prima prova. Un modello linguistico prevede la parola più probabile: nei testi su cui è stato addestrato, quando una persona "pensa a un numero a caso", il 17 compare più spesso degli altri. Se in aula esce un altro numero, contate le risposte: il 17 di solito vince comunque.</p>
+  </div>
+</section>
+
+<!-- 11 · LA PIANTA CHE NON TORNA -->
+<section class="slide" data-title="La pianta che non torna" data-steps="3">
+  <div class="in dense">
+    <p class="eyebrow">02 | Come funziona</p>
+    <div class="pianta">
+      <div class="pianta-img">
+        <img src="assets/img/pianta-gemini.png" alt="Pianta quotata di un bilocale generata da Gemini il 25 novembre 2026">
+        <span class="seg s1" data-step="1"></span>
+        <span class="seg s2" data-step="1"></span>
+        <span class="seg s3" data-step="2"></span>
+        <span class="seg s5" data-step="2"></span>
+        <span class="seg s4" data-step="3"></span>
+      </div>
+      <div class="pianta-txt">
+        <h2>Una pianta perfetta, con i conti sbagliati.</h2>
+        <p class="lead">Chiesta a Gemini il 25 novembre: "pianta di un bilocale di 50 mq, quotata".</p>
+        <ol class="rules sm">
+          <li data-step="1">La camera è larga 3,90 m sopra e 1,50&nbsp;+&nbsp;1,80&nbsp;=&nbsp;3,30 m sotto.</li>
+          <li data-step="2">Il soggiorno fa 22,7 mq: 5,40&nbsp;×&nbsp;4,20. Ma la stanza è profonda 4,20&nbsp;+&nbsp;1,80: la cucina nel conto non&nbsp;c'è.</li>
+          <li data-step="3">Il totale fa 50,1 mq, proprio i 50 chiesti nel prompt. Ci arriva contando il balcone e lasciando fuori la&nbsp;cucina.</li>
+        </ol>
+        <p class="small" data-step="3">Sembra uscita da uno studio. È epistemia in forma di disegno.</p>
+      </div>
+    </div>
+  </div>
+  <div class="extra">
+    <h4>Come rifarla</h4>
+    <p>Prompt usato in Gemini (modello Gemini 4 Hydrogen, impostazione predefinita, 25 novembre 2026): "Crea l'immagine della pianta architettonica di un bilocale di 50 mq, con le quote in metri di ogni stanza e la superficie di ogni ambiente scritta all'interno." Il risultato cambia a ogni prova: gli errori possono essere diversi, ma di solito ci sono. Le immagini generate disegnano numeri credibili, non misure calcolate.</p>
+    <p>Le verifiche fatte sulla pianta del 25 novembre: camera 3,90 × 3,80 = 14,8 mq, bagno 1,80 × 2,90 = 5,2 mq, disimpegno 1,50 × 1,80 = 2,7 mq, balcone 3,75 × 1,25 = 4,7 mq tornano. Il soggiorno con cottura invece è calcolato solo sulla parte alta (5,40 × 4,20 = 22,7 mq): la fascia della cucina, profonda 1,80 m, vale circa 7 mq e manca. Attenzione a un falso errore: le due catene di quote laterali (7,25 m a sinistra, 6,70 m a destra) misurano punti diversi, perché quella di sinistra comprende il balcone.</p>
+  </div>
+</section>
+
+<!-- 12 · QUANDO È NATA -->
+<section class="slide dark" data-title="Quando è nata l'AI?" data-steps="3">
+  <div class="in dense">
+    <p class="eyebrow">02 | Come funziona</p>
+    <h2>Quando si è cominciato a parlare di intelligenza artificiale?</h2>
+    <div class="nascita">
+      <svg class="vis" viewBox="0 0 1000 330" role="img" aria-label="Linea del tempo dal 1950 al 2026: Turing nel 1950, gli inverni dell'AI, il Transformer nel 2017 e ChatGPT nel 2022">
+        <defs><clipPath id="clip-turing"><rect x="40" y="18" width="150" height="196" rx="14"/></clipPath></defs>
+        <line x1="880" y1="270" x2="960" y2="270" stroke="#3a3a3c" stroke-width="4" stroke-linecap="round"/>
+        <g data-step="1"><line x1="850" y1="270" x2="880" y2="270" stroke="#3a3a3c" stroke-width="4"/></g>
+        <g data-step="2"><line x1="60" y1="270" x2="850" y2="270" stroke="#3a3a3c" stroke-width="4" stroke-linecap="round"/></g>
+        <circle cx="923" cy="270" r="11" fill="#2997ff"/>
+        <text x="923" y="242" text-anchor="end" fill="#f5f5f7" font-size="26" font-weight="700">30 nov 2022</text>
+        <text x="923" y="306" text-anchor="end" fill="#a1a1a6" font-size="17">ChatGPT</text>
+        <g data-step="1">
+          <circle cx="859" cy="270" r="8" fill="#f5f5f7"/>
+          <line x1="859" y1="262" x2="859" y2="196" stroke="#3a3a3c" stroke-width="2"/>
+          <text x="845" y="176" text-anchor="end" fill="#f5f5f7" font-size="20" font-weight="700">2017</text>
+          <text x="845" y="198" text-anchor="end" fill="#a1a1a6" font-size="15">Google pubblica il Transformer</text>
+        </g>
+        <g data-step="2">
+          <image href="assets/img/turing.jpg" x="40" y="18" width="150" height="196" preserveAspectRatio="xMidYMin slice" clip-path="url(#clip-turing)"/>
+          <circle cx="60" cy="270" r="11" fill="#2997ff"/>
+          <text x="210" y="120" fill="#f5f5f7" font-size="56" font-weight="700" letter-spacing="-1">1950</text>
+          <text x="210" y="152" fill="#a1a1a6" font-size="17">Alan Turing: "Le macchine possono pensare?"</text>
+          <text x="520" y="120" fill="#2997ff" font-size="56" font-weight="700" letter-spacing="-1">72 anni prima</text>
+        </g>
+        <g data-step="3">
+          <g><rect x="344" y="250" width="71" height="40" rx="6" fill="#2997ff" opacity=".22"/><rect x="498" y="250" width="71" height="40" rx="6" fill="#2997ff" opacity=".22"/></g>
+          <text x="456" y="320" text-anchor="middle" fill="#a1a1a6" font-size="15">due inverni dell'AI: fondi e interesse crollano</text>
+          <circle cx="131" cy="270" r="6" fill="#f5f5f7"/>
+          <text x="131" y="306" text-anchor="middle" fill="#a1a1a6" font-size="15">1956, nasce il nome</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <div class="extra">
+    <h4>La storia in breve</h4>
+    <ul>
+      <li>Alan Turing, "Computing Machinery and Intelligence", rivista <i>Mind</i>, ottobre 1950. Turing aveva contribuito a decifrare Enigma durante la Seconda guerra mondiale; fu condannato per omosessualità nel 1952 e morì nel 1954, a 41 anni.</li>
+      <li>Il termine "artificial intelligence" nasce nel 1956, alla conferenza di Dartmouth. Seguono due "inverni dell'AI", a metà degli anni Settanta e tra la fine degli Ottanta e l'inizio dei Novanta, quando finanziamenti e interesse crollano.</li>
+      <li>Vaswani e altri, <a href="https://arxiv.org/abs/1706.03762">"Attention Is All You Need"</a>, 2017: l'architettura Transformer, alla base di tutti i chatbot di oggi.</li>
+      <li>ChatGPT è stato reso pubblico da OpenAI il 30 novembre 2022.</li>
+      <li>Foto: Alan Turing a 16 anni, archivio del King's College di Cambridge, pubblico dominio (Wikimedia Commons).</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 13 · TIPI DI MODELLI -->
+<section class="slide" data-title="Tre tipi di modelli" data-steps="3">
+  <div class="in dense">
+    <p class="eyebrow">02 | Come funziona</p>
+    <h2>Tre modi di avere un modello.</h2>
+    <div class="cols3 stretch modelli">
+      <div class="panel">
+        <svg class="pitto" viewBox="0 0 120 60" aria-hidden="true"><rect x="10" y="22" width="86" height="22" rx="8" fill="none" stroke="currentColor" stroke-width="3"/><path d="M24 22l10-12h34l12 12" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="30" cy="46" r="7" fill="#fff" stroke="currentColor" stroke-width="3"/><circle cx="78" cy="46" r="7" fill="#fff" stroke="currentColor" stroke-width="3"/><path d="M100 30h14" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+        <h3>Chiusi, di frontiera</h3>
+        <p class="cardtxt">Noleggio con autista. Il più potente, guidano loro, paghi l'abbonamento. I tuoi dati passano dai loro server.</p>
+        <p class="loghi-grandi"><img src="assets/loghi/claude-color.svg" alt="Claude"><img src="assets/loghi/openai.svg" alt="OpenAI"><img src="assets/loghi/gemini-color.svg" alt="Gemini"><img src="assets/loghi/grok.svg" alt="Grok"></p>
+      </div>
+      <div class="panel" data-step="1">
+        <svg class="pitto" viewBox="0 0 120 60" aria-hidden="true"><rect x="4" y="8" width="112" height="46" rx="4" fill="none" stroke="currentColor" stroke-width="3"/><path d="M4 20h112" stroke="currentColor" stroke-width="3"/><rect x="22" y="30" width="60" height="16" rx="6" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="34" cy="47" r="5" fill="#fff" stroke="currentColor" stroke-width="3"/><circle cx="70" cy="47" r="5" fill="#fff" stroke="currentColor" stroke-width="3"/></svg>
+        <h3>Aperti, di frontiera</h3>
+        <p class="cardtxt">L'auto te la regalano, ma serve un capannone di computer per farla andare. Quasi tutti cinesi.</p>
+        <p class="loghi-grandi"><img src="assets/loghi/kimi-color.svg" alt="Kimi"><img src="assets/loghi/deepseek-color.svg" alt="DeepSeek"><img src="assets/loghi/qwen-color.svg" alt="Qwen"><img src="assets/loghi/zhipu-color.svg" alt="GLM di Zhipu"><img src="assets/loghi/mistral-color.svg" alt="Mistral"></p>
+      </div>
+      <div class="panel" data-step="2">
+        <svg class="pitto" viewBox="0 0 120 60" aria-hidden="true"><path d="M14 54V24l46-18 46 18v30" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><rect x="34" y="34" width="44" height="13" rx="5" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="44" cy="48" r="4" fill="#fff" stroke="currentColor" stroke-width="3"/><circle cx="68" cy="48" r="4" fill="#fff" stroke="currentColor" stroke-width="3"/></svg>
+        <h3>Locali</h3>
+        <p class="cardtxt">L'utilitaria nel tuo box. Gira sul tuo computer, i dati non escono, ma è più lenta e meno brava.</p>
+        <p class="loghi-grandi"><img src="assets/loghi/ollama.svg" alt="Ollama"><img src="assets/loghi/lmstudio.svg" alt="LM Studio"></p>
+      </div>
+    </div>
+    <div class="specialisti" data-step="3">
+      <b>E poi gli specialisti</b>
+      <div class="spec-gruppo"><em>Immagini</em><span><img src="assets/loghi/nanobanana-color.svg" alt="">Nano Banana</span><span><img src="assets/loghi/openai.svg" alt="">GPT Image</span></div>
+      <div class="spec-gruppo"><em>Video</em><span><img src="assets/loghi/google-color.svg" alt="">Veo</span><span><img src="assets/loghi/bytedance-color.svg" alt="">Seedance</span><span><img src="assets/loghi/kling-color.svg" alt="">Kling</span></div>
+    </div>
+  </div>
+  <div class="extra">
+    <h4>In parole semplici</h4>
+    <ul>
+      <li><b>Modello chiuso</b>: il produttore non rilascia i "pesi", cioè il file che contiene quello che il modello ha imparato. Lo usi solo tramite le sue app o le sue API (le porte di accesso per i programmi). Oggi: Claude (Anthropic), GPT (OpenAI), Gemini (Google), Grok (xAI).</li>
+      <li><b>Modello aperto</b> (in inglese <i>open weights</i>): i pesi si scaricano liberamente. I più forti sono enormi: servono server costosi, oppure li usi tramite un fornitore. Oggi: Kimi (Moonshot AI), DeepSeek, Qwen (Alibaba), GLM (Zhipu), Mistral (Francia).</li>
+      <li><b>Modello locale</b>: un modello aperto piccolo che gira sul tuo computer con programmi come Ollama o LM Studio. Utile per documenti riservati.</li>
+      <li><b>Specialisti</b>: modelli per immagini (Nano Banana di Google, GPT Image di OpenAI), video (Veo di Google, Seedance di ByteDance, Kling di Kuaishou), 3D.</li>
+    </ul>
+    <p>Loghi da LobeHub Icons (versione 1.106.0), salvati in locale.</p>
+  </div>
+</section>
+
+<!-- 14 · CLASSIFICA -->
+<section class="slide" data-title="Chiusi contro aperti">
+  <div class="in dense">
+    <p class="eyebrow">02 | Come funziona</p>
+    <h2>I primi dieci sono tutti chiusi.</h2>
+    <p class="lead">Il punteggio è l'indice di intelligenza di Artificial Analysis: più è alto, più il modello è bravo nei test.</p>
+    <div class="panel">
+      <svg class="vis classifica" viewBox="0 0 760 300" role="img" aria-label="Classifica Artificial Analysis Intelligence Index del 24 novembre 2026">
+        <g font-size="14">
+          <g transform="translate(0,8)"><rect x="220" y="2" width="455" height="22" rx="5" fill="#0071e3"/></g><g transform="translate(0,8)"><image href="assets/loghi/claude-color.svg" x="0" y="2" width="20" height="20"/><text x="28" y="18">Claude Fable 5.2</text><text x="685" y="19" font-weight="700">65</text></g>
+          <g transform="translate(0,40)"><rect x="220" y="2" width="434" height="22" rx="5" fill="#0071e3" opacity=".85"/></g><g transform="translate(0,40)"><image href="assets/loghi/openai.svg" x="0" y="2" width="20" height="20"/><text x="28" y="18">GPT-6.2 Astra</text><text x="664" y="19" font-weight="700">62</text></g>
+          <g transform="translate(0,72)"><rect x="220" y="2" width="434" height="22" rx="5" fill="#0071e3" opacity=".85"/></g><g transform="translate(0,72)"><image href="assets/loghi/gemini-color.svg" x="0" y="2" width="20" height="20"/><text x="28" y="18">Gemini 4 Neon</text><text x="664" y="19" font-weight="700">62</text></g>
+          <g transform="translate(0,104)"><rect x="220" y="2" width="420" height="22" rx="5" fill="#0071e3" opacity=".7"/></g><g transform="translate(0,104)"><image href="assets/loghi/gemini-color.svg" x="0" y="2" width="20" height="20"/><text x="28" y="18">Gemini 4 Carbon</text><text x="650" y="19" font-weight="700">60</text></g>
+          <g transform="translate(0,136)"><rect x="220" y="2" width="413" height="22" rx="5" fill="#0071e3" opacity=".7"/></g><g transform="translate(0,136)"><image href="assets/loghi/claude-color.svg" x="0" y="2" width="20" height="20"/><text x="28" y="18">Claude Opus 5.5</text><text x="643" y="19" font-weight="700">59</text></g>
+          <text x="28" y="196" fill="#6e6e73">… altri cinque modelli chiusi …</text>
+          <g transform="translate(0,222)"><rect x="220" y="2" width="329" height="22" rx="5" fill="#30a46c"/></g><g transform="translate(0,222)"><image href="assets/loghi/kimi-color.svg" x="0" y="2" width="20" height="20"/><text x="28" y="18" font-weight="700">Kimi K3.1 Pro</text><text x="559" y="19" font-weight="700" fill="#30a46c">47 | il primo aperto</text></g>
+          <g transform="translate(0,254)"><rect x="220" y="2" width="224" height="22" rx="5" fill="#30a46c" opacity=".6"/></g><g transform="translate(0,254)"><image href="assets/loghi/deepseek-color.svg" x="0" y="2" width="20" height="20"/><text x="28" y="18">DeepSeek V4.1 Flash</text><text x="454" y="19" font-weight="700">32</text></g>
+        </g>
+      </svg>
+    </div>
+    <p class="lead ink unariga">Però li inseguono da vicino: per Epoch AI un modello aperto raggiunge quelli chiusi in circa&nbsp;4&nbsp;mesi.</p>
+  </div>
+  <div class="extra">
+    <h4>Fonti</h4>
+    <ul>
+      <li><a href="https://artificialanalysis.ai/leaderboards/models">Artificial Analysis, classifica dei modelli</a>, indice di intelligenza versione 5.0.2, letta il 25 novembre 2026 (metodo aggiornato il 24 novembre). Punteggi con la massima impostazione di ragionamento di ciascun modello. Tra il quinto e il primo aperto ci sono GPT-6.2 Sol (57), Claude Sonnet 5.5 (55), Gemini 4 Hydrogen (54), GPT-6.1 Terra (51), Gemini 4 Argon (51) e Muse Wonder di Meta (50).</li>
+      <li>Distacco in mesi: analisi di Epoch AI sull'Epoch Capabilities Index, riportata da <a href="https://officechai.com/ai/open-source-models-currently-lag-proprietary-models-by-just-4-months-epoch-ai/">OfficeChai</a> il 30 maggio 2026 (fonte secondaria). Un tracker indipendente sui dati Artificial Analysis misurava 3,4 mesi a giugno 2026 (<a href="https://yaroslavvb.github.io/artificial-analysis-oss-lag/">yaroslavvb.github.io</a>).</li>
+      <li>Modelli ufficiali: Claude Fable 5.2 (Anthropic, 9 novembre 2026); GPT-6.2 Astra e Sol (OpenAI, 17 novembre 2026); Gemini 4 Neon (Google, 18 novembre 2026).</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 15 · GEOGRAFIA -->
+<section class="slide" data-title="L'AI ha una geografia" data-steps="2">
+  <div class="in dense">
+    <p class="eyebrow">02 | Come funziona</p>
+    <h2>L'AI ha anche una geografia.</h2>
+    <div class="cols3 stretch geo">
+      <div class="panel"><span class="n">Stati Uniti</span><h3>Costruiscono i modelli chiusi</h3><p class="cardtxt">Quasi tutta la classifica: Anthropic, OpenAI, Google, xAI, Meta.</p><p class="loghi-grandi"><img src="assets/loghi/anthropic.svg" alt="Anthropic"><img src="assets/loghi/openai.svg" alt="OpenAI"><img src="assets/loghi/google-color.svg" alt="Google"><img src="assets/loghi/meta-color.svg" alt="Meta"></p></div>
+      <div class="panel" data-step="1"><span class="n">Cina</span><h3>Regalano i modelli aperti</h3><p class="cardtxt">I migliori modelli scaricabili vengono da laboratori cinesi.</p><p class="loghi-grandi"><img src="assets/loghi/kimi-color.svg" alt="Kimi"><img src="assets/loghi/deepseek-color.svg" alt="DeepSeek"><img src="assets/loghi/qwen-color.svg" alt="Qwen"><img src="assets/loghi/zhipu-color.svg" alt="Zhipu"></p></div>
+      <div class="panel" data-step="2"><span class="n">Europa</span><h3>Scrive le regole</h3><p class="cardtxt">Per le regole europee la nuova Siri con l'AI non arriva su iPhone, e l'agente Gemini Spark qui non c'è.</p><p class="loghi-grandi"><img src="assets/loghi/mistral-color.svg" alt="Mistral"><img src="assets/loghi/apple.svg" alt="Apple"><img src="assets/loghi/gemini-color.svg" alt="Gemini"></p></div>
+    </div>
+    <p class="small" data-step="2">Le regole proteggono i tuoi dati. In cambio, alcune novità le vedi dopo, o non le vedi.</p>
+  </div>
+  <div class="extra">
+    <h4>Fonti</h4>
+    <ul>
+      <li>Apple, <a href="https://www.apple.com/newsroom/2026/06/due-to-dma-siri-ai-delayed-in-eu-for-ios-27-and-ipados-27/">"Due to DMA, Siri AI delayed in EU for iOS 27 and iPadOS 27"</a>, giugno 2026. Il DMA (Digital Markets Act) è la legge europea sui mercati digitali. Su Mac la funzione arriva.</li>
+      <li>Gemini Spark, l'agente personale sempre acceso di Google presentato a maggio 2026, è disponibile in oltre 160 Paesi ma non nello Spazio economico europeo, nel Regno Unito e in Svizzera (fonti di stampa, tra cui tecnoandroid.it; Google non ha dato date per l'Europa).</li>
+      <li>AI Act: regolamento (UE) 2024/1689. In Italia la legge 132/2025 aggiunge, all'articolo 13, l'obbligo per i professionisti di informare il cliente quando usano sistemi di AI. Informazione generale, non parere legale.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== PAUSA ===================== -->
+<section class="slide dark" data-po data-title="Pausa">
+  <div class="in center">
+    <p class="eyebrow">Pausa</p>
+    <h1 class="hero">Dieci minuti.</h1>
+    <p class="lead big">Al rientro: perché il prompt perfetto non esiste.</p>
+  </div>
+</section>
+
+<!-- ===================== 03 · PARLARCI BENE ===================== -->
+
+<!-- 16 · FILTRO: CERVELLO E MANI -->
+<section class="slide dark filtro" data-title="Il modello e l'app intorno" data-steps="2">
+  <div class="in dense">
+    <p class="eyebrow">03 | Parlarci bene</p>
+    <h2>Il cervello e le mani.</h2>
+    <div class="harness">
+      <svg class="vis" viewBox="0 0 830 300" role="img" aria-label="Il modello al centro, l'app intorno con strumenti, memoria, istruzioni e permessi; lo stesso modello in app diverse">
+        <g data-step="1">
+          <rect x="20" y="20" width="460" height="260" rx="28" fill="#1c1c1e" stroke="#2997ff" stroke-width="2" stroke-dasharray="7 6"/>
+          <text x="250" y="50" text-anchor="middle" fill="#2997ff" font-size="15" font-weight="700" letter-spacing="2">L'APP INTORNO | HARNESS</text>
+          <g font-size="15" fill="#f5f5f7" font-weight="600">
+            <g><rect x="45" y="75" width="150" height="58" rx="12" fill="#2c2c2e"/><text x="120" y="100" text-anchor="middle">Strumenti</text><text x="120" y="121" text-anchor="middle" font-size="12" fill="#a1a1a6" font-weight="400">web, file, browser</text></g>
+            <g><rect x="305" y="75" width="150" height="58" rx="12" fill="#2c2c2e"/><text x="380" y="100" text-anchor="middle">Memoria</text><text x="380" y="121" text-anchor="middle" font-size="12" fill="#a1a1a6" font-weight="400">chi sei, cosa hai fatto</text></g>
+            <g><rect x="45" y="200" width="150" height="58" rx="12" fill="#2c2c2e"/><text x="120" y="225" text-anchor="middle">Istruzioni</text><text x="120" y="246" text-anchor="middle" font-size="12" fill="#a1a1a6" font-weight="400">come deve lavorare</text></g>
+            <g><rect x="305" y="200" width="150" height="58" rx="12" fill="#2c2c2e"/><text x="380" y="225" text-anchor="middle">Permessi</text><text x="380" y="246" text-anchor="middle" font-size="12" fill="#a1a1a6" font-weight="400">le chiavi che gli dai</text></g>
+          </g>
+        </g>
+        <circle cx="250" cy="166" r="62" fill="#2997ff"/>
+        <text x="250" y="162" text-anchor="middle" fill="#000" font-size="18" font-weight="700">Modello</text>
+        <text x="250" y="184" text-anchor="middle" fill="#000" font-size="13">il cervello</text>
+        <g data-step="2">
+          <text x="540" y="46" fill="#2997ff" font-size="13" font-weight="700" letter-spacing="1.5">STESSO CERVELLO, APP DIVERSE</text>
+          <g><rect x="540" y="66" width="270" height="46" rx="12" fill="#1c1c1e"/><image href="assets/loghi/openai.svg" x="556" y="77" width="24" height="24" style="filter:invert(1)"/><text x="592" y="95" fill="#f5f5f7" font-size="16" font-weight="600">ChatGPT</text><text x="796" y="95" text-anchor="end" fill="#a1a1a6" font-size="14">chiacchiera</text></g>
+          <g><rect x="540" y="118" width="270" height="46" rx="12" fill="#1c1c1e" stroke="#2997ff" stroke-width="1.5"/><image href="assets/loghi/codex-color.svg" x="556" y="129" width="24" height="24"/><text x="592" y="147" fill="#f5f5f7" font-size="16" font-weight="600">Codex</text><text x="796" y="147" text-anchor="end" fill="#2997ff" font-size="14">lavora</text></g>
+          <g><rect x="540" y="184" width="270" height="46" rx="12" fill="#1c1c1e"/><image href="assets/loghi/claude-color.svg" x="556" y="195" width="24" height="24"/><text x="592" y="213" fill="#f5f5f7" font-size="16" font-weight="600">Claude</text><text x="796" y="213" text-anchor="end" fill="#a1a1a6" font-size="14">chiacchiera</text></g>
+          <g><rect x="540" y="236" width="270" height="46" rx="12" fill="#1c1c1e" stroke="#2997ff" stroke-width="1.5"/><image href="assets/loghi/claudecode-color.svg" x="556" y="247" width="24" height="24"/><text x="592" y="265" fill="#f5f5f7" font-size="16" font-weight="600">Claude Code</text><text x="796" y="265" text-anchor="end" fill="#2997ff" font-size="14">lavora</text></g>
+        </g>
+      </svg>
+    </div>
+    <p class="lead stepcap"><span>Il modello, da solo, sa fare una cosa: scrivere la parola successiva.</span><span>L'app gli collega strumenti, memoria, istruzioni e permessi.</span><span>Per questo lo stesso modello in un'app chiacchiera e in un'altra lavora al tuo posto.</span></p>
+  </div>
+  <div class="extra">
+    <h4>Due parole</h4>
+    <ul>
+      <li><b>Modello</b> (o LLM, <i>large language model</i>, modello linguistico di grandi dimensioni): il "cervello" che prevede il testo, per esempio GPT-6.2 o Claude Opus 5.5.</li>
+      <li><b>Harness</b> (in inglese "imbracatura"): il programma che sta intorno al modello e gli dà strumenti, memoria, istruzioni e permessi. ChatGPT e Codex usano i modelli di OpenAI; Claude e Claude Code quelli di Anthropic.</li>
+    </ul>
+    <p>Per questo conviene giudicare l'insieme: un buon modello in un'app povera rende poco.</p>
+  </div>
+</section>
+
+<!-- 17 · DA QUANDO HA LE MANI -->
+<section class="slide" data-title="Da quando ha le mani" data-steps="6">
+  <div class="in dense">
+    <p class="eyebrow">03 | Parlarci bene</p>
+    <h2>Il tirocinante ora ha le chiavi.</h2>
+    <p class="lead">Sa moltissimo del mondo e niente di te. Dal 2024 non risponde soltanto: può anche fare.</p>
+    <ol class="tl crescita" style="--n:6" aria-label="Le date">
+      <li><b>30 nov 2022</b><span>ChatGPT: parla</span></li>
+      <li data-step="1"><b>22 ott 2024</b><span>Claude usa il computer (in beta)</span></li>
+      <li data-step="2"><b>23 gen 2025</b><span>OpenAI Operator usa il browser</span></li>
+      <li data-step="3"><b>mag 2025</b><span>Codex e Claude Code scrivono programmi</span></li>
+      <li data-step="4"><b>gen 2026</b><span>Claude Cowork lavora sui tuoi file</span></li>
+      <li data-step="5"><b>9 lug 2026</b><span>ChatGPT Work: chat e Codex insieme</span></li>
+    </ol>
+    <p class="lead ink chiave" data-step="6">Le chiavi si danno una alla volta: prima i file, poi la posta, poi&nbsp;il&nbsp;browser.</p>
+  </div>
+  <div class="extra">
+    <h4>Date e fonti</h4>
+    <ul>
+      <li>30 novembre 2022: ChatGPT (OpenAI).</li>
+      <li>22 ottobre 2024: "computer use" di Anthropic in beta pubblica, con Claude 3.5 Sonnet.</li>
+      <li>23 gennaio 2025: Operator di OpenAI, agente che usa un browser.</li>
+      <li>16 maggio 2025: <a href="https://openai.com/index/introducing-codex/">Introducing Codex</a> (OpenAI). 22 maggio 2025: Claude Code disponibile per tutti (Anthropic, era in anteprima dal 24 febbraio).</li>
+      <li>Gennaio 2026: Claude Cowork in anteprima; dal 16 settembre 2026 Cowork e chat si uniscono in un'unica app.</li>
+      <li>9 luglio 2026: ChatGPT Work, che unisce ChatGPT e Codex (stampa internazionale, Reuters).</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 18 · MEMORIA E COLLEGAMENTI -->
+<section class="slide" data-title="Memoria e collegamenti" data-steps="5">
+  <div class="in dense">
+    <p class="eyebrow">03 | Parlarci bene</p>
+    <div class="strati-box">
+      <div class="strati-txt">
+        <h2>Quello che sa, strato per strato.</h2>
+        <p class="lead stepcap"><span>In fondo c'è quello che ha studiato. Si ferma a una data.</span><span>Poi come vuoi che lavori: lo scrivi una volta.</span><span>Poi chi sei: la memoria.</span><span>Poi i file del progetto e la conversazione.</span><span>In cima, i collegamenti: email, calendario, Drive, web.</span><span>La memoria sa chi sei. I collegamenti sanno cosa sta succedendo adesso.</span></p>
+      </div>
+      <div class="strati">
+        <i class="fase5" data-step="5" aria-hidden="true"></i>
+        <div class="strato s6" data-step="4"><b>Collegamenti</b><span>email, calendario, Drive, ricerca web</span><em class="bollo" data-step="5">cosa succede adesso</em></div>
+        <div class="strato s5" data-step="3"><b>Conversazione</b><span>quello che vi siete detti in questa chat</span></div>
+        <div class="strato s4" data-step="3"><b>Progetto e file</b><span>i documenti che gli carichi</span></div>
+        <div class="strato s3" data-step="2"><b>Memoria</b><span>chi sei, lo studio, le preferenze</span><em class="bollo" data-step="5">chi sei</em></div>
+        <div class="strato s2" data-step="1"><b>Istruzioni personalizzate</b><span>tono, formato, cosa evitare</span></div>
+        <div class="strato s1"><b>Addestramento</b><span>il mondo, fino a una data</span></div>
+        <div class="asse" aria-hidden="true"><span>cambia ogni minuto</span><span>cambia di rado</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="extra">
+    <h4>Dove si trovano</h4>
+    <ul>
+      <li><b>ChatGPT</b>: Impostazioni, Personalizzazione (istruzioni e memoria); Progetti nella barra laterale; App collegate per Gmail, Calendar, Drive.</li>
+      <li><b>Gemini</b>: Impostazioni, Istruzioni per Gemini e Personal Intelligence; collegamenti a Gmail, Calendar, Drive.</li>
+      <li><b>Claude</b>: Impostazioni, Profilo (preferenze) e Memoria; Progetti; Connettori.</li>
+    </ul>
+    <p>Regola pratica: se un'informazione cambia di rado (il tuo ruolo, il tono) va nelle istruzioni o nella memoria; se cambia ogni giorno (email, appuntamenti) conviene collegare la fonte. Non mettere dati sensibili di clienti in account personali.</p>
+  </div>
+</section>
+
+<!-- 19 · PROMPT E META PROMPT -->
+<section class="slide gray" data-title="Prompt: chiedilo a lui">
+  <div class="in dense">
+    <p class="eyebrow">03 | Parlarci bene</p>
+    <h2>Il prompt perfetto non va imparato a memoria.</h2>
+    <p class="lead">Ti bastano sei ingredienti. E puoi chiedere all'AI di scriverlo per te: si chiama meta prompt.</p>
+    <div class="cols2">
+      <div class="panel ingredienti">
+        <ol class="rules sm">
+          <li><span><b>Ruolo</b>: chi deve essere.</span></li>
+          <li><span><b>Obiettivo</b>: cosa deve fare.</span></li>
+          <li><span><b>Contesto</b>: il progetto, il cliente, i file.</span></li>
+          <li><span><b>Formato</b>: elenco, tabella, 300 parole.</span></li>
+          <li><span><b>Vincoli</b>: cosa fare e cosa no.</span></li>
+          <li><span><b>Esempio</b>: un risultato che ti piace.</span></li>
+        </ol>
+      </div>
+      <div class="prompt"><span class="tag">Meta prompt | copialo</span><pre id="p-meta">Devo ottenere questo risultato: [COSA TI SERVE].
+Prima di rispondere, fammi le domande che ti servono per capire contesto, pubblico e formato.
+Poi scrivi tu il prompt migliore per ottenerlo, con ruolo, obiettivo, contesto, formato, vincoli ed esempio.</pre><button class="copy" data-copy-from="p-meta">Copia</button></div>
+    </div>
+  </div>
+  <div class="extra">
+    <h4>Come si usa</h4>
+    <p>Sostituisci [COSA TI SERVE] con il risultato, per esempio "una email al cliente che chiede uno sconto sulla direzione lavori". Rispondi alle domande, poi incolla il prompt che ti scrive in una chat nuova. Se il risultato ti piace, salvalo nelle istruzioni di un Progetto e riusalo.</p>
+    <p>Un trucco in più: chiedi a fine risposta "quanto sei sicuro, da 0 a 100, e su cosa?". Non è una garanzia, ma ti dice dove controllare.</p>
+  </div>
+</section>
+
+<!-- 20 · SMETTI DI RIPETERTI (proposta) -->
+<section class="slide" data-title="Smetti di ripeterti" data-steps="2">
+  <div class="in dense">
+    <p class="eyebrow">03 | Parlarci bene</p>
+    <h2>Smetti di ripeterti.</h2>
+    <div class="ripeti">
+      <div class="ripeti-prima">
+        <p class="n">Ogni chat nuova</p>
+        <div class="bolla grigia">Sono un architetto, ho uno studio di due persone a Roma.</div>
+        <div class="bolla grigia">Scrivo in modo cordiale ma asciutto, senza giri di parole.</div>
+        <div class="bolla grigia">Firma: Studio Rossi, via…</div>
+        <p class="nota-ripeti">da riscrivere ogni volta</p>
+      </div>
+      <div class="ripeti-freccia" data-step="1" aria-hidden="true"><svg viewBox="0 0 80 40"><path d="M4 20h64m-12-10l12 10-12 10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="ripeti-dopo" data-step="1">
+        <div class="cartella">
+          <p class="n">Un progetto, una volta sola</p>
+          <ul><li>Istruzioni: chi sei e come scrivi</li><li>Tre email vere che hai scritto tu</li><li>La firma dello studio</li></ul>
+        </div>
+        <div class="bolla blu">Rispondi a questa richiesta di preventivo.</div>
+        <div class="bolla bianca">Ecco la bozza, con il tuo tono e la tua firma.</div>
+      </div>
+    </div>
+    <div class="dove-si-chiama" data-step="2">
+      <span><img src="assets/loghi/openai.svg" alt="">ChatGPT <em>Progetti</em></span>
+      <span><img src="assets/loghi/claude-color.svg" alt="">Claude <em>Progetti</em></span>
+      <span><img src="assets/loghi/gemini-color.svg" alt="">Gemini <em>Gem</em></span>
+    </div>
+  </div>
+  <div class="extra">
+    <h4>Cosa è cambiato</h4>
+    <p>L'idea è sempre la stessa: istruzioni e file che l'AI legge prima di ogni risposta. I GPT personalizzati di ChatGPT sono in ritiro dall'11 dicembre 2026 e passano ai plugin (<a href="https://help.openai.com/en/articles/20001519">OpenAI, Custom GPT retirement and migration FAQ</a>); per il lavoro di ogni giorno bastano i Progetti. In Claude ci sono anche le Skill, per i procedimenti che ripeti.</p>
+    <p>Per un assistente di scrittura carica testi semplici (file .txt o .docx), non PDF scansionati.</p>
+  </div>
+</section>
+
+<!-- ===================== PRANZO ===================== -->
+<section class="slide dark" data-po data-title="Pranzo">
+  <div class="in center">
+    <p class="eyebrow">Pranzo</p>
+    <h1 class="hero">Pausa.</h1>
+    <p class="lead big">Al rientro: i tuoi documenti, letti per te.</p>
+  </div>
+</section>
+
+<!-- ===================== 04 · I TUOI DOCUMENTI ===================== -->
+
+<!-- 21 · FILTRO GEMINI NOTEBOOK -->
+<section class="slide dark filtro" data-title="Gemini Notebook" data-steps="3">
+  <div class="in dense">
+    <p class="eyebrow">04 | I tuoi documenti</p>
+    <div class="marchio-titolo"><img src="assets/loghi/gemini-notebook.svg" alt="Gemini Notebook"><h2>Una biblioteca vuota che riempi tu.</h2></div>
+    <p class="lead">Gemini Notebook, fino a luglio NotebookLM, risponde solo con quello che gli carichi e ti dice dove l'ha letto. Si usa gratis con un account Google.</p>
+    <div class="vignette">
+      <div class="vign" data-step="1">
+        <svg viewBox="0 0 160 80" aria-hidden="true"><rect x="20" y="10" width="34" height="46" rx="4" fill="none" stroke="#f5f5f7" stroke-width="2.5"/><rect x="62" y="10" width="34" height="46" rx="4" fill="none" stroke="#f5f5f7" stroke-width="2.5"/><rect x="104" y="10" width="34" height="46" rx="4" fill="none" stroke="#2997ff" stroke-width="2.5"/><path d="M28 24h18M28 32h18M70 24h18M70 32h18M112 24h18M112 32h18" stroke="#8e8e93" stroke-width="2"/><path d="M20 68h118" stroke="#3a3a3c" stroke-width="2.5"/></svg>
+        <span class="n">1 | Carichi</span><h3>Le fonti</h3><p>PDF, scansioni, foto, audio, video, fogli di calcolo. Anche scritti a mano.</p>
+      </div>
+      <div class="vign" data-step="2">
+        <svg viewBox="0 0 160 80" aria-hidden="true"><rect x="16" y="12" width="92" height="30" rx="12" fill="none" stroke="#f5f5f7" stroke-width="2.5"/><path d="M30 26h60" stroke="#8e8e93" stroke-width="2"/><rect x="52" y="46" width="92" height="26" rx="12" fill="none" stroke="#2997ff" stroke-width="2.5"/><path d="M66 59h40" stroke="#2997ff" stroke-width="2"/><circle cx="124" cy="59" r="6" fill="none" stroke="#2997ff" stroke-width="2"/><text x="124" y="63" text-anchor="middle" font-size="9" fill="#2997ff">3</text></svg>
+        <span class="n">2 | Chiedi</span><h3>Con le citazioni</h3><p>Ogni risposta rimanda alla pagina da cui viene. Se non c'è, te lo dice.</p>
+      </div>
+      <div class="vign" data-step="3">
+        <svg viewBox="0 0 160 80" aria-hidden="true"><rect x="14" y="14" width="38" height="50" rx="4" fill="none" stroke="#f5f5f7" stroke-width="2.5"/><path d="M60 50c6-16 12 16 18 0s12 16 18 0" fill="none" stroke="#2997ff" stroke-width="2.5"/><rect x="108" y="14" width="40" height="50" rx="4" fill="none" stroke="#f5f5f7" stroke-width="2.5"/><rect x="116" y="38" width="7" height="18" fill="#2997ff"/><rect x="127" y="30" width="7" height="26" fill="#2997ff"/></svg>
+        <span class="n">3 | Ottieni</span><h3>Report, podcast, infografiche</h3><p>Un riassunto, un podcast da ascoltare in macchina, una presentazione.</p>
+      </div>
+    </div>
+  </div>
+  <div class="extra">
+    <h4>Cos'è</h4>
+    <p>Google, <a href="https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/">"NotebookLM is now Gemini Notebook"</a>, 16 luglio 2026: stesso prodotto, nome nuovo; i link e i notebook esistenti continuano a funzionare. Funziona con la tecnica chiamata RAG (<i>retrieval augmented generation</i>, generazione con recupero): prima cerca nelle tue fonti, poi scrive la risposta solo con quello che ha trovato.</p>
+    <p>Limiti di fonti per notebook e funzioni gratuite cambiano spesso: controlla la pagina aggiornata di Google.</p>
+  </div>
+</section>
+
+<!-- 22 · PREVENTIVI -->
+<section class="slide gray" data-title="Due preventivi a confronto">
+  <div class="in dense">
+    <p class="eyebrow">04 | I tuoi documenti</p>
+    <h2>Stesso computo, due preventivi diversi.</h2>
+    <div class="io">
+      <div class="iocol">
+        <h3>Gli dai</h3>
+        <div class="item"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="10" y="6" width="28" height="36" rx="5" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M16 16h16M16 23h16M16 30h10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg><span>Preventivo ditta A<small>a prezzi unitari</small></span></div>
+        <div class="item"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="10" y="6" width="28" height="36" rx="5" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M16 16h16M16 23h16M16 30h10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg><span>Preventivo ditta B<small>a corpo, forfettario</small></span></div>
+      </div>
+      <div class="iomid" aria-hidden="true"><img class="iologo" src="assets/loghi/gemini-notebook.svg" alt=""><svg viewBox="0 0 120 60"><path d="M6 30h90m-14-12l14 12-14 12" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Gemini Notebook</b></div>
+      <div class="iocol">
+        <h3>Ottieni</h3>
+        <div class="item"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="10" width="36" height="28" rx="5" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M6 20h36M18 10v28" stroke="currentColor" stroke-width="2.4"/></svg><span>Tabella voce per voce<small>con le pagine citate</small></span></div>
+        <div class="item"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="16" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M24 15v10M24 31v1" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg><span>Cosa manca a ciascuno<small>per esempio pulizia finale e trasporti</small></span></div>
+      </div>
+    </div>
+    <div class="prompt"><span class="tag">Prompt</span><pre id="p-preventivi">Confronta i due preventivi caricati. Sono riferiti allo stesso computo metrico.
+Fai una tabella voce per voce con importo e pagina di riferimento di ciascuno.
+Segnala le lavorazioni che uno include e l'altro no, e le voci a corpo da chiarire con la ditta.</pre><button class="copy" data-copy-from="p-preventivi">Copia</button></div>
+  </div>
+  <div class="extra">
+    <h4>Il caso del workshop di marzo</h4>
+    <p>Due ditte, circa 58.000 e 57.000 €. Il notebook ha riconosciuto che una lavorava a prezzi unitari e l'altra a corpo, e che a una mancavano pulizia finale e trasporto dei materiali. La scelta resta tua: il confronto ti dice cosa chiedere alle ditte.</p>
+    <p>Altro uso: una cartella per ogni cliente con capitolato, planimetrie, visure, foto di cantiere e trascrizioni degli incontri.</p>
+  </div>
+</section>
+
+<!-- 23 · SOPRALLUOGO -->
+<section class="slide gray" data-title="Il sopralluogo diventa report">
+  <div class="in dense">
+    <p class="eyebrow">04 | I tuoi documenti</p>
+    <h2>Registri il sopralluogo, in macchina hai il verbale.</h2>
+    <p class="lead">Una nota vocale dal telefono, senza tagliarla. La carichi nel notebook del cliente e chiedi il report.</p>
+    <div class="cols2">
+      <ol class="rules">
+        <li>Avvisa chi è presente che registri.</li>
+        <li>Parla mentre cammini: stanza, problema, cosa va fatto.</li>
+        <li>Carica l'audio nel notebook del cliente.</li>
+        <li>Rileggi prima di mandarlo.</li>
+      </ol>
+      <div class="prompt"><span class="tag">Prompt</span><pre id="p-sopralluogo">Dalla registrazione del sopralluogo scrivi un verbale per il cliente.
+Per ogni ambiente: stato dei lavori, problemi notati, cosa deve fare chi e entro quando.
+Tono professionale e calmo. Segnala i punti in cui l'audio non è chiaro.</pre><button class="copy" data-copy-from="p-sopralluogo">Copia</button></div>
+    </div>
+  </div>
+  <div class="extra">
+    <h4>Attenzioni</h4>
+    <ul>
+      <li>Registrare una conversazione a cui partecipi è in genere lecito, ma diffonderla o usarla senza consenso no: avvisa sempre. Informazione generale, non parere legale.</li>
+      <li>Nel workshop di marzo il report ha parlato di "criticità igienico-sanitarie" per un cantiere solo sporco: l'AI tende a drammatizzare. Rileggi sempre.</li>
+      <li>Vale anche per le videochiamate registrate e per le chat esportate da WhatsApp (menu, Esporta chat).</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== 05 · IMMAGINI ===================== -->
+
+<!-- 24 · PIXEL GENERATI (apertura di sezione) -->
+<section class="slide dark" data-title="Pixel generati">
+  <div class="in center sezione-pixel">
+    <p class="eyebrow">05 | Immagini</p>
+    <blockquote class="citazione-pixel"><i>"Ogni singolo pixel sarà presto generato. Non&nbsp;renderizzato: generato."</i></blockquote>
+    <p class="firma-citazione"><img src="assets/loghi/nvidia-color.svg" alt="NVIDIA">Jensen Huang, fondatore di NVIDIA</p>
+  </div>
+  <div class="extra">
+    <h4>La citazione</h4>
+    <ul>
+      <li>La frase riassume il pensiero di Jensen Huang sulla grafica generata. Le sue parole documentate: "calcoliamo un pixel, gli altri 32 li deduciamo" (<a href="https://pcgamer.com/hardware/we-cant-do-computer-graphics-anymore-without-artificial-intelligence-we-compute-one-pixel-we-infer-the-other-32-jensen-thinks-ai-is-integral-to-next-gen-graphics-tech">PC Gamer</a>) e, alla CES 2026, il "neural rendering" come futuro della grafica (<a href="https://www.tomshardware.com/pc-components/gpus/nvidia-ceo-jensen-huang-says-the-future-is-neural-rendering-at-ces-2026-teasing-dlss-advancements-rtx-5090-could-represent-the-pinnacle-of-traditional-raster">Tom's Hardware</a>).</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 24b · INTERNO: DAL MODELLO ALLA FOTO -->
+<section class="slide" data-title="Interno: dal modello alla foto" data-steps="1">
+  <div class="in dense">
+    <p class="eyebrow">05 | Immagini</p>
+    <h2>Dal modello di massima alla foto.</h2>
+    <div class="pd">
+      <div class="cmp"><img src="assets/img/interno-modello.jpg" alt="Modello 3D grigio di un soggiorno"><div class="top"><img src="assets/img/interno-foto.jpg" alt="Lo stesso soggiorno in foto realistica"></div><div class="bar"></div><span class="tg l">MODELLO</span><span class="tg r"><img src="assets/loghi/nanobanana-color.svg" alt="">NANO BANANA</span></div>
+      <div class="pd-lato">
+        <div class="prompt piccolo"><span class="tag">Il prompt</span><pre id="p-interno">Generate an image: turn the attached grey 3D massing model into a photorealistic interior photograph of the same living room. Camera: identical position, height, lens and perspective as the attached image, 24mm, eye level. Materials: warm white lime-plaster walls, wide light oak plank floor, sand linen three-seat sofa with two cushions, walnut coffee table with slim black steel legs, oatmeal wool rug, open oak bookshelf with a few books and ceramics, white fabric drum pendant lamp, matching floor lamp, low oak sideboard. Light: soft late-afternoon daylight from the window, gentle long shadows, natural colours. Style: editorial architectural interior photography. Mandatory: keep every wall, opening and piece of furniture exactly where it is, with the same size, proportions and outline as in the model; same window and door openings; same framing. Forbidden: adding or removing furniture, moving objects, changing the room shape, people, text, logos, watermarks.</pre><button class="copy" data-copy-from="p-interno">Copia</button></div>
+        <p class="chi-scrive" data-step="1">Questo prompt non l'ho scritto io. L'ha&nbsp;scritto <img class="inl" src="assets/loghi/claude-color.svg" alt="">Claude, con&nbsp;il&nbsp;meta&nbsp;prompt.</p>
+      </div>
+    </div>
+  </div>
+  <div class="extra">
+    <h4>Come è fatta</h4>
+    <ul>
+      <li>Il modello grigio è un volume semplice (pareti, finestra, porta, arredi a blocchi), come quelli che si fanno in pochi minuti in SketchUp, Rhino o Revit.</li>
+      <li>Immagine generata con Nano Banana nell'app Gemini il 25 novembre 2026, al primo tentativo. Controllo fatto sovrapponendo i contorni del modello alla foto: pareti, finestra, divano e tavolino restano al loro posto.</li>
+      <li>Il prompt è in inglese perché i modelli di immagine lo seguono con più precisione. Le due parti che contano sono "Mandatory" (cosa non deve cambiare) e "Forbidden" (cosa non deve aggiungere).</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 24c · ESTERNO: DAL VOLUME ALL'EDIFICIO -->
+<section class="slide" data-title="Esterno: dal volume all'edificio" data-steps="1">
+  <div class="in dense">
+    <p class="eyebrow">05 | Immagini</p>
+    <h2>Dal volume all'edificio, a Roma, al tramonto.</h2>
+    <div class="pd">
+      <div class="cmp"><img src="assets/img/esterno-modello.jpg" alt="Modello bianco a volumi di un edificio"><div class="top"><img src="assets/img/esterno-foto.jpg" alt="Lo stesso edificio in foto realistica"></div><div class="bar"></div><span class="tg l">MODELLO</span><span class="tg r"><img src="assets/loghi/nanobanana-color.svg" alt="">NANO BANANA</span></div>
+      <div class="pd-lato">
+        <div class="prompt piccolo"><span class="tag">Il prompt</span><pre id="p-esterno">Generate an image: turn the attached white massing model into a photorealistic architectural photograph of the same building. Camera: identical position, height, lens and perspective as the attached image. Building: a contemporary residential and retail block in a Rome neighbourhood; the base floor becomes shop fronts with dark bronze frames and large glass; the upper volumes become warm travertine-coloured plaster; the recessed grey boxes become deep loggias with glass railings and the darker rectangles become windows with thin bronze frames; the canopy becomes a slim concrete canopy. Context: the round abstract trees become real Mediterranean trees (holm oaks), a paved sidewalk, a few parked bicycles, soft blue sky. Light: golden hour, low warm sun from the right, long soft shadows. Style: editorial architectural photography, natural colours. Mandatory: keep the exact massing, heights, setbacks, number and position of loggias, windows and shop fronts, and the same framing as the model. Forbidden: adding floors or volumes, changing proportions, moving openings, people in the foreground, text, logos, watermarks.</pre><button class="copy" data-copy-from="p-esterno">Copia</button></div>
+        <p class="chi-scrive" data-step="1">Logge, vetrine e altezze sono rimaste al loro&nbsp;posto: è il prompt a&nbsp;imporlo.</p>
+      </div>
+    </div>
+  </div>
+  <div class="extra">
+    <h4>Come è fatta</h4>
+    <ul>
+      <li>Modello bianco a volumi (basamento, due corpi sfalsati, logge, vetrine, pensilina, alberi astratti). Immagine generata con Nano Banana nell'app Gemini il 25 novembre 2026, al primo tentativo.</li>
+      <li>Controllo: il 95% dei contorni del modello coincide con quelli della foto. Gli alberi sono diventati lecci veri e il contesto (strada, palazzi vicini) è stato aggiunto, come chiesto.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 24d · PIANTA: DAL 2D AL 3D ARREDATO -->
+<section class="slide" data-title="Pianta: dal disegno al render" data-steps="1">
+  <div class="in dense">
+    <p class="eyebrow">05 | Immagini</p>
+    <h2>Dalla pianta al render, linea per linea.</h2>
+    <div class="pd pd-pianta">
+      <div class="cmp"><img src="assets/img/pianta-2d.jpg" alt="Pianta quotata di un bilocale di 55 metri quadrati, con arredi"><div class="top"><img src="assets/img/pianta-render.jpg" alt="Lo stesso bilocale in un render fotorealistico visto dall'alto"></div><div class="bar"></div><span class="tg l">PIANTA</span><span class="tg r"><img src="assets/loghi/nanobanana-color.svg" alt="">NANO BANANA</span></div>
+      <div class="pd-lato">
+        <div class="prompt piccolo"><span class="tag">Il prompt</span><pre id="p-pianta">Generate an image: turn the attached 2D architectural floor plan into a photorealistic top-down render of the same apartment, seen from directly above (orthographic view, no perspective), as if the roof had been removed. Mandatory: keep exactly the same framing, aspect ratio and scale as the attached plan, so the render can be laid over the plan line by line; every wall, door opening, window and piece of furniture stays in exactly the same position, size and orientation. Walls: solid, cut top surface in flat matte charcoal grey, 30 cm external walls, 10 cm partitions. Floors: light oak planks in the living room, kitchen, entrance and bedroom; large light grey stone tiles in the bathroom. Furniture exactly as drawn: linear kitchen along the left wall with fridge at the top, sink under the window and four-burner hob; dining table 140x80 cm with four chairs; three-seat sand linen sofa with its back against the left wall, facing the low TV cabinet on the partition; rectangular walnut coffee table on an oatmeal wool rug; double bed with white linen and two pillows, headboard against the right wall, two bedside tables, sliding-door wardrobe on the left wall of the bedroom; in the bathroom a shower tray in the top-right corner, a washbasin on the top wall, a toilet and a bidet on the right wall. Doors as open light wooden door leaves at the drawn hinge positions. Soft daylight entering from the windows, gentle realistic contact shadows. Outside the apartment: plain pure white background. Forbidden: no text, no room labels, no dimension lines, no north arrow, no title block; no extra furniture, no extra sanitary fixtures, no plants or objects that are not in the plan; do not move, resize or rotate anything; no perspective tilt; no watermark.</pre><button class="copy" data-copy-from="p-pianta">Copia</button></div>
+        <p class="chi-scrive" data-step="1">Trascina il cursore: è tutto al suo&nbsp;posto.</p>
+      </div>
+    </div>
+  </div>
+  <div class="extra">
+    <h4>Come è fatta</h4>
+    <ul>
+      <li>La pianta di partenza è un bilocale di 55,1 m² disegnato in misure reali: muri esterni da 30 cm, tramezzi da 10 cm, porte che aprono verso pareti libere, quote parziali che tornano con i totali.</li>
+      <li>Render generato con Nano Banana nell'app Gemini il 26 novembre 2026, al primo tentativo, con il prompt qui accanto (scritto da Claude con il meta prompt).</li>
+      <li>Controllo fatto sovrapponendo i contorni della pianta al render: dentro l'appartamento coincide l'85% dei contorni e l'80% della superficie dei muri. Stanza per stanza non ci sono arredi o sanitari in più.</li>
+      <li>La vista è dall'alto e senza prospettiva apposta: è l'unico modo per sovrapporre il render alla pianta e controllarlo linea per linea.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 24e · TAVOLINO: SCHIZZO, RENDER, 3D -->
+<section class="slide dark" data-title="Dallo schizzo al 3D" data-steps="2">
+  <div class="in dense">
+    <p class="eyebrow">05 | Immagini</p>
+    <h2>Dallo schizzo al modello 3D.</h2>
+    <div class="cols3 tris">
+      <figure><img src="assets/img/schizzo.jpg" alt="Schizzo a matita di un tavolino da caffè"><figcaption>Lo schizzo</figcaption></figure>
+      <figure data-step="1"><img src="assets/img/render.jpg" alt="Render fotorealistico del tavolino in legno"><figcaption>Il render, un clic</figcaption></figure>
+      <figure data-step="2"><img src="assets/img/modello-3d.jpg" alt="Modello 3D del tavolino"><figcaption>Il modello 3D, un clic</figcaption></figure>
+    </div>
+  </div>
+  <div class="extra">
+    <h4>Fonti e strumenti</h4>
+    <ul>
+      <li>Schizzo, render e 3D sono del workshop di marzo, fatti con VizMaker, un programma a nodi che raccoglie più modelli (Nano Banana, Flux e altri). Non sponsorizzato.</li>
+      <li>Tutto il flusso, dal disegno o dal modello 3D all'immagine da impaginare, è il tema del workshop ArchiViz.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== 06 · AGENTI ===================== -->
+
+<!-- 26 · LE ULTIME EVOLUZIONI -->
+<section class="slide" data-title="Le ultime evoluzioni" data-steps="2">
+  <div class="in dense">
+    <p class="eyebrow">06 | Dalla chat agli agenti</p>
+    <h2>Le ultime evoluzioni.</h2>
+    <div class="cols3 stretch novita">
+      <div class="panel">
+        <span class="n">Al computer</span><h3>Lavora nel browser e nei file</h3>
+        <p class="cardtxt">Gli dai un obiettivo e apre siti, compila moduli, riordina cartelle.</p>
+        <ul class="marchi">
+          <li><img src="assets/loghi/openai.svg" alt="">ChatGPT Work</li>
+          <li><img src="assets/loghi/claude-color.svg" alt="">Claude Cowork</li>
+          <li><img src="assets/loghi/perplexity-color.svg" alt="">Perplexity Computer</li>
+        </ul>
+      </div>
+      <div class="panel" data-step="1">
+        <span class="n">Su misura</span><h3>Programmi tuoi, descritti a parole</h3>
+        <p class="cardtxt">Il gestionale degli iscritti, la ricerca dei contatti e queste slide li ha costruiti un agente, guidato a parole.</p>
+        <ul class="marchi">
+          <li><img src="assets/loghi/claudecode-color.svg" alt="">Claude Code</li>
+          <li><img src="assets/loghi/codex-color.svg" alt="">Codex</li>
+          <li><img src="assets/loghi/lovable-color.svg" alt="">Lovable</li>
+        </ul>
+      </div>
+      <div class="panel" data-step="2">
+        <span class="n">Sempre acceso</span><h3>L'assistente che non dorme</h3>
+        <p class="cardtxt">Lavora anche quando sei offline. I primi due li installi tu, gratis.</p>
+        <ul class="marchi">
+          <li><img src="assets/loghi/openclaw-color.svg" alt="">OpenClaw</li>
+          <li><img src="assets/loghi/hermesagent.svg" alt="">Hermes Agent</li>
+          <li><img src="assets/loghi/openai.svg" alt="">Dots <em>non in UE</em></li>
+          <li><img src="assets/loghi/muse-color.svg" alt="">Muse di Meta <em>non in UE</em></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="extra">
+    <h4>Dettagli</h4>
+    <ul>
+      <li><b>Al computer</b>: ChatGPT Work (OpenAI, dal 9 luglio 2026, unisce ChatGPT, agente e Codex); Claude Cowork (Anthropic, da gennaio 2026, unito alla chat dal 16 settembre 2026) con l'estensione Claude in Chrome; Perplexity Computer.</li>
+      <li><b>Su misura</b>: Claude Code (Anthropic) e Codex (OpenAI; da aprile 2026 OpenAI lo presenta come agente "per quasi tutto", non solo per il codice); Lovable per creare siti e app descrivendoli.</li>
+      <li><b>Sempre acceso</b>: OpenClaw, progetto open source nato a novembre 2025 come Clawdbot, con nome attuale da gennaio 2026 (<a href="https://en.wikipedia.org/wiki/OpenClaw">Wikipedia</a>); Hermes Agent di Nous Research, open source da febbraio 2026 (<a href="https://github.com/NousResearch/hermes-agent">GitHub</a>). Si installano sul proprio computer o su un server e usano il modello che scegli. Dots di OpenAI (dal 29 settembre 2026) non è disponibile per il piano Pro nello Spazio economico europeo, nel Regno Unito e in Svizzera; Muse di Meta non è disponibile in nessun Paese dell'Unione europea (fonti di stampa, novembre 2026).</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== CHIUSURA ===================== -->
+
+<!-- 27 · CONVINZIONI RIBALTATE -->
+<section class="slide dark" data-title="Cosa abbiamo smontato" data-steps="12">
+  <div class="in dense">
+    <p class="eyebrow">Per chiudere</p>
+    <h2>Quale ti ha sorpreso di più?</h2>
+    <ol class="ribaltate">
+      <li data-step="1"><span class="mito">Ormai l'AI la usano tutti.</span><span class="verita" data-step="2">La paga l'1% del mondo.</span></li>
+      <li data-step="3"><span class="mito">L'AI ruberà il lavoro all'architetto.</span><span class="verita" data-step="4">Rischio calcolato 19%. Il problema sono i redditi.</span></li>
+      <li data-step="5"><span class="mito">L'AI sa le cose.</span><span class="verita" data-step="6">Scrive la parola più probabile.</span></li>
+      <li data-step="7"><span class="mito">L'AI è nata con ChatGPT.</span><span class="verita" data-step="8">Turing se lo chiedeva nel 1950.</span></li>
+      <li data-step="9"><span class="mito">Serve il prompt perfetto.</span><span class="verita" data-step="10">Serve il contesto. Il prompt lo scrive lui.</span></li>
+      <li data-step="11"><span class="mito">L'AI è una chat a cui fai domande.</span><span class="verita" data-step="12">Con le chiavi giuste lavora al posto tuo.</span></li>
+    </ol>
+  </div>
+  <div class="extra">
+    <h4>Perché questa slide</h4>
+    <p>Richiamare a fine giornata quello che si è visto aiuta a ricordarlo: lo suggeriscono Bowman (<i>Training from the Back of the Room</i>, Conclusioni, p. 223) e Brown e colleghi (<i>Make It Stick</i>, cap. 2).</p>
+  </div>
+</section>
+
+<!-- 28 · LA TUA PRIMA MOSSA -->
+<section class="slide gray" data-title="La tua prima mossa" data-steps="3">
+  <div class="in">
+    <p class="eyebrow">Per chiudere</p>
+    <h2>La tua prima mossa.</h2>
+    <ol class="rules mt">
+      <li data-step="1">Scrivi le istruzioni personalizzate della tua AI: chi sei, che studio hai, come vuoi le risposte.</li>
+      <li data-step="2">Crea un notebook per il cliente di cui hai più carte, e chiedigli cosa manca.</li>
+      <li data-step="3">Fatti scrivere dal meta prompt il prompt di un render che rispetti le geometrie del tuo&nbsp;progetto.</li>
+    </ol>
+    <p class="small mt">Scegline una. Tra una settimana ti scrivo per chiederti com'è andata.</p>
+  </div>
+  <div class="extra">
+    <h4>Perché sceglierne una</h4>
+    <p>Un impegno preso davanti agli altri si mantiene più spesso: è il piano d'azione delle conclusioni di Bowman (<i>Training from the Back of the Room</i>, p. 223). Brown e colleghi consigliano un richiamo nelle settimane successive per chi fa formazione professionale (<i>Make It Stick</i>, cap. 8).</p>
+  </div>
+</section>
+
+<!-- 29 · WORKSHOP E PREZZI -->
+<section class="slide" data-title="I workshop" data-steps="7">
+  <div class="in dense">
+    <p class="eyebrow">Il prossimo passo</p>
+    <h2>Tre workshop, uno per volta, col computer.</h2>
+    <div class="cols3 stretch ws">
+      <div class="panel ws-card" data-step="1">
+        <img class="ws-foto" src="assets/img/ws-archiviz.jpg" alt="Tavolo da disegno con un plastico bianco e le foto dello stesso edificio">
+        <h3>ArchiViz</h3><p class="cardtxt">Dal disegno o dal 3D alle immagini fotorealistiche pronte da impaginare.</p>
+      </div>
+      <div class="panel ws-card" data-step="2">
+        <img class="ws-foto" src="assets/img/ws-productivity.jpg" alt="Scrivania con quaderno di appunti, metro e caffè">
+        <h3>Productivity</h3><p class="cardtxt">Verbali, email, ricerche e documenti del tuo studio.</p>
+      </div>
+      <div class="panel ws-card" data-step="3">
+        <img class="ws-foto" src="assets/img/ws-marketing.jpg" alt="Una passante guarda la vetrina di uno studio di architettura">
+        <h3>Marketing</h3><p class="cardtxt">Il cliente ideale, dove trovarlo, cosa dirgli e un piano editoriale fatto con l'AI.</p>
+      </div>
+    </div>
+    <div class="prezzi-riga">
+      <div class="prezzi">
+        <span class="p p1" data-step="4" data-until="5">1.490 €</span>
+        <span class="p p2" data-step="5" data-until="6">749 €</span>
+        <span class="p p3" data-step="6" data-until="7">249 €</span>
+        <span class="p p4" data-step="7">99 € <small>a workshop</small></span>
+      </div>
+      <div class="promo" data-step="7">
+        <b>Porta una collega</b>
+        <span>Se si iscrive ad Architette Romane e prenota un workshop, il tuo prossimo è&nbsp;gratis.</span>
+      </div>
+    </div>
+  </div>
+  <div class="extra">
+    <h4>Iscrizioni</h4>
+    <p>Workshop dal vivo a Roma, in piccoli gruppi. Date, sede, posti e iscrizioni su <a href="https://andrealucarelli.com/calendar">andrealucarelli.com/calendar</a>. Ogni workshop richiede l'Intro. Prezzo: 99 € a workshop.</p>
+    <p>Offerta collega: se una collega che oggi non è iscritta ad Architette Romane si iscrive all'associazione e prenota un workshop, il tuo prossimo workshop è gratuito.</p>
+  </div>
+</section>
+
+<!-- 30 · DARWIN -->
+<section class="slide dark" data-title="Non vince il più forte" data-steps="1">
+  <div class="in center darwin">
+    <blockquote class="citazione"><i>"In natura non vince la specie più forte, ma quella che meglio si adatta al&nbsp;cambiamento."</i></blockquote>
+    <p class="lead big"><span data-until="1">Charles Darwin.</span></p>
+    <div class="svelata" data-step="1">
+      <p class="lead big">Darwin non l'ha mai scritta. Viene da un discorso del 1963 di Leon Megginson, professore di economia, e l'abbiamo condivisa tutti per sessant'anni.</p>
+      <p class="small">Suona vera, quindi ci crediamo: è epistemia. Il senso resta giusto: adattati, e controlla le fonti.</p>
+    </div>
+  </div>
+  <div class="extra">
+    <h4>Fonti</h4>
+    <p><a href="https://quoteinvestigator.com/2014/05/04/adapt/">Quote Investigator</a>, 4 maggio 2014: la prima versione nota è in un discorso di Leon C. Megginson, Louisiana State University, 1963; nessuna prova che Darwin l'abbia scritta. Il <a href="https://www.darwinproject.ac.uk/node/338">Darwin Correspondence Project</a> la classifica tra le citazioni sbagliate.</p>
+  </div>
+</section>
+
+<!-- 31 · GRAZIE -->
+<section class="slide dark" data-title="Grazie">
+  <div class="in linkslide">
+    <h1>Grazie.</h1>
+    <p class="lead">Slide, prompt, fonti e report restano qui.</p>
+    <img class="qr" src="assets/qr.png" alt="Codice QR del deck">
+    <p class="url">jonathanlivingston86.github.io/intro-ai</p>
+    <p class="small">Andrea Lucarelli | ai.andrealucarelli.com</p>
+  </div>
+</section>
+
+</main>
+
+<div class="ui" id="ui">
+  <span class="brand">Intro AI Literacy | Dispensa</span>
+  <div class="grp">
+    <button id="bIndex" title="Indice (G)">Indice</button>
+    <button id="bMode" title="Cambia modalità (H)">Dispensa</button>
+    <button id="bFs" title="Schermo intero (F)">Schermo intero</button>
+    <button id="bPrint" title="Stampa o salva in PDF">Stampa / PDF</button>
+  </div>
+</div>
+<div class="progress" id="progress"></div>
+<div class="hint">Frecce per muoverti | G indice | H dispensa | F schermo intero</div>
+<div class="overlay" id="overlay"><h4>Indice</h4><ol id="overlayList"></ol></div>
+
+<script src="moduli/puntini.js"></script>
+<script src="moduli/video.js"></script>
+<script src="deck.js"></script>
+</body>
+</html>

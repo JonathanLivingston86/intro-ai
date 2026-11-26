@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>La professione di architetto in Italia | Report novembre 2026</title>
+<meta name="description" content="Numeri, regole e nicchie della professione di architetto in Italia, aggiornati a novembre 2026. Ogni numero con la sua fonte.">
+<style>
+:root{--blue:#0071e3;--ink:#1d1d1f;--mute:#6e6e73;--gray:#f5f5f7;--line:#d2d2d7;--ok:#30a46c;--ko:#e5484d;--amber:#f5a623;
+--sans:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI Variable Display","Segoe UI",system-ui,Helvetica,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--sans);color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.55;font-size:18px}
+a{color:var(--blue)}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+header.hero{background:#000;color:#f5f5f7;padding:96px 0 72px}
+.eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--blue)}
+header .eyebrow{color:#2997ff}
+h1{font-size:clamp(40px,7vw,76px);line-height:1.02;letter-spacing:-.04em;margin:.3em 0 .35em}
+header p.sub{font-size:clamp(19px,2.4vw,24px);color:#a1a1a6;max-width:34em}
+header .meta{margin-top:28px;font-size:14px;color:#8e8e93}
+nav.toc{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav.toc .wrap{display:flex;gap:18px;overflow-x:auto;padding-top:12px;padding-bottom:12px;font-size:14px;white-space:nowrap}
+nav.toc a{color:var(--mute);text-decoration:none}
+nav.toc a:hover{color:var(--ink)}
+section{padding:72px 0;border-bottom:1px solid var(--line)}
+section.grigia{background:var(--gray)}
+h2{font-size:clamp(30px,4.4vw,46px);line-height:1.08;letter-spacing:-.03em;margin:.25em 0 .4em}
+h3{font-size:21px;letter-spacing:-.01em;margin-bottom:.3em}
+p+p{margin-top:.8em}
+.lead{font-size:21px;color:var(--mute);max-width:40em}
+.numeri{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:32px}
+.numero{background:var(--gray);border-radius:18px;padding:22px}
+section.grigia .numero{background:#fff}
+.numero b{display:block;font-size:44px;letter-spacing:-.045em;line-height:1.05}
+.numero b.blu{color:var(--blue)}.numero b.rosso{color:var(--ko)}.numero b.verde{color:var(--ok)}
+.numero span{display:block;font-size:15px;color:var(--mute);margin-top:6px;line-height:1.4}
+.grafico{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;margin-top:28px}
+section.grigia .grafico{border-color:transparent}
+.grafico h3{font-size:17px}
+.grafico .nota{font-size:13px;color:var(--mute);margin-top:10px}
+svg{display:block;width:100%;height:auto}
+svg text{font-family:var(--sans)}
+.due{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:28px}
+.carte{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:28px}
+.carta{border:1px solid var(--line);border-radius:18px;padding:22px;background:#fff;display:flex;flex-direction:column;gap:8px}
+section.grigia .carta{border-color:transparent}
+.carta .tag{font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--blue)}
+.carta p{font-size:16px;color:#3a3a3c}
+.carta .ai{margin-top:auto;padding-top:10px;border-top:1px solid var(--line);font-size:14px;color:var(--mute)}
+.stato{display:inline-block;font-size:12px;font-weight:700;border-radius:999px;padding:3px 10px;letter-spacing:.04em}
+.stato.vigore{background:#e3f4ea;color:#1e7a4b}.stato.attesa{background:#fff4e0;color:#9a5b00}.stato.mancato{background:#fde7e8;color:#b3262b}
+.passi{list-style:none;counter-reset:p;display:grid;gap:14px;margin-top:28px}
+.passi li{counter-increment:p;display:grid;grid-template-columns:52px 1fr;gap:16px;align-items:start;background:#fff;border-radius:18px;padding:20px}
+.passi li::before{content:counter(p);font-size:30px;font-weight:700;color:var(--blue);letter-spacing:-.04em;line-height:1}
+.passi b{display:block;font-size:19px;margin-bottom:4px}
+.passi span{color:#3a3a3c;font-size:16px}
+.citazione{font-size:clamp(22px,3vw,30px);line-height:1.25;letter-spacing:-.02em;font-weight:600;max-width:28em;margin-top:24px}
+.fonti{font-size:14px;color:#3a3a3c}
+.fonti ol{padding-left:1.3em;display:grid;gap:8px;margin-top:16px}
+.fonti a{word-break:break-word}
+footer{padding:48px 0 72px;font-size:14px;color:var(--mute)}
+.btn{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;border-radius:999px;padding:12px 22px;font-weight:600;font-size:15px;margin-top:20px}
+.btn.chiaro{background:transparent;border:1px solid currentColor;color:#f5f5f7;margin-left:8px}
+@media (max-width:720px){.due{grid-template-columns:1fr}body{font-size:17px}section{padding:56px 0}}
+@media print{nav.toc,.btn{display:none}header.hero{padding:40px 0}section{padding:28px 0;break-inside:avoid-page}body{font-size:12pt}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+.legenda-r{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:14px;color:var(--mute);margin:6px 0 4px}
+.legenda-r i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.legenda-r .verde{color:#1e7a4b;font-weight:600}.legenda-r .rosso{color:#b3262b;font-weight:600}
+.metodo{background:var(--gray);border-radius:18px;padding:22px;margin:20px 0 8px;font-size:15px;color:#3a3a3c}
+.metodo b{color:var(--ink)}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Report | aggiornato al 26 novembre 2026</p>
+    <h1>La professione di architetto in Italia.</h1>
+    <p class="sub">Quanti siamo, quanto guadagniamo, cosa cambia nel mercato e dove si può crescere. Con i numeri ufficiali più recenti e una proposta per muoversi.</p>
+    <p class="meta">Andrea Lucarelli | aggiornato al 26 novembre 2026 | nato da una ricerca approfondita con l'AI, poi verificato fonte per fonte (<a href="#metodo" style="color:#2997ff">come è fatto</a>)</p>
+    <a class="btn" href="#sintesi">Inizia dalla sintesi</a><a class="btn chiaro" href="../">Torna alle slide</a>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Indice"><div class="wrap">
+  <a href="#sintesi">Sintesi</a><a href="#quanti">Quanti siamo</a><a href="#redditi">Redditi</a><a href="#divari">Divari</a><a href="#mercato">Mercato</a><a href="#regole">Regole</a><a href="#nicchie">Nicchie</a><a href="#nanismo">Studi piccoli</a><a href="#piano">Piano</a><a href="#fonti">Fonti</a>
+</div></nav>
+
+<section id="sintesi">
+  <div class="wrap">
+    <p class="eyebrow">In sintesi</p>
+    <h2>Il problema non è il lavoro che manca. È come è distribuito.</h2>
+    <p class="lead">L'Italia ha più architetti di quasi tutta l'Europa, li paga meno degli ingegneri e paga molto meno le donne e chi lavora al Sud. Intanto il mercato cambia: finiscono gli incentivi straordinari e arrivano nuove regole sull'energia degli edifici.</p>
+    <div class="numeri">
+      <div class="numero"><b>2,6</b><span>architetti ogni 1.000 abitanti in Italia. In Europa la media è 1.</span></div>
+      <div class="numero"><b class="blu">38.192 €</b><span>reddito medio di un architetto libero professionista nel 2024. Un ingegnere: 64.269 €.</span></div>
+      <div class="numero"><b class="rosso">−40%</b><span>quanto guadagna in meno un'architetta rispetto a un collega uomo.</span></div>
+      <div class="numero"><b>70%</b><span>degli studi di architettura in Europa sono fatti da una sola persona.</span></div>
+      <div class="numero"><b class="verde">49%</b><span>del lavoro degli architetti europei è ristrutturazione. Il nuovo è il 40%.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="quanti" class="grigia">
+  <div class="wrap">
+    <p class="eyebrow">01 | Quanti siamo</p>
+    <h2>Quasi 160.000 iscritti all'albo. Poco più della metà fa la libera professione.</h2>
+    <p class="lead">Nel 2025 gli architetti iscritti agli Ordini sono 159.769, di cui 70.944 donne (il 44%). Solo 91.320 sono iscritti a Inarcassa, cioè lavorano come liberi professionisti. Gli altri sono dipendenti, insegnanti, o fanno altro.</p>
+    <div class="grafico">
+      <h3>Architetti iscritti agli albi nel 2025, per tipo di attività</h3>
+      <svg viewBox="0 0 900 120" role="img" aria-label="Su 159.769 architetti: 91.320 iscritti a Inarcassa, 14.574 con partita IVA ma non iscritti alla cassa, 53.875 solo iscritti all'albo">
+        <rect x="0" y="20" width="514" height="54" rx="8" fill="#0071e3"/><text x="14" y="53" font-size="17" font-weight="700" fill="#fff">91.320 iscritti Inarcassa | 57%</text>
+        <rect x="518" y="20" width="82" height="54" fill="#6e6e73"/><text x="527" y="53" font-size="14" font-weight="600" fill="#fff">14.574</text>
+        <rect x="604" y="20" width="296" height="54" rx="8" fill="#d2d2d7"/><text x="618" y="53" font-size="17" font-weight="700" fill="#1d1d1f">53.875 solo albo | 34%</text>
+        <text x="527" y="100" font-size="13" fill="#6e6e73">con partita IVA, non in Inarcassa</text>
+      </svg>
+      <p class="nota">Fonte: Inarcassa in cifre 2026, tabella 1a. Gli iscritti Inarcassa comprendono 9.128 pensionati che continuano a lavorare.</p>
+    </div>
+    <div class="due">
+      <div><h3>Siamo tantissimi</h3><p>Secondo il Consiglio degli architetti d'Europa (ACE) l'Italia ha circa 152.000 architetti, 2,6 ogni 1.000 abitanti: tra i valori più alti del continente, dove la media è uno ogni 1.000. Italia e Germania insieme fanno quasi metà degli architetti europei.</p></div>
+      <div><h3>E distribuiti in modo diseguale</h3><p>Gli architetti iscritti a Inarcassa al Nord sono 47.793, al Centro 20.864, al Sud e nelle Isole 22.565. Al Sud più del 40% degli iscritti all'albo non esercita la libera professione.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="redditi">
+  <div class="wrap">
+    <p class="eyebrow">02 | Redditi</p>
+    <h2>Un architetto guadagna poco più della metà di un ingegnere.</h2>
+    <p class="lead">Dopo il crollo tra il 2008 e il 2015 i redditi sono risaliti grazie ai bonus edilizi. Ma la distanza dagli ingegneri è rimasta.</p>
+    <div class="grafico">
+      <h3>Reddito professionale medio 2024, liberi professionisti iscritti a Inarcassa</h3>
+      <svg viewBox="0 0 900 230" role="img" aria-label="Ingegneri uomini 69.127, ingegnere 38.868, architetti uomini 45.761, architette 27.658">
+        <g font-size="16" fill="#1d1d1f">
+          <text x="0" y="38">Ingegneri, uomini</text><rect x="210" y="16" width="600" height="34" rx="6" fill="#d2d2d7"/><text x="222" y="39" font-weight="700">69.127 €</text>
+          <text x="0" y="88">Architetti, uomini</text><rect x="210" y="66" width="397" height="34" rx="6" fill="#6e6e73"/><text x="222" y="89" font-weight="700" fill="#fff">45.761 €</text>
+          <text x="0" y="138">Ingegnere, donne</text><rect x="210" y="116" width="337" height="34" rx="6" fill="#b9d6f8"/><text x="222" y="139" font-weight="700">38.868 €</text>
+          <text x="0" y="188">Architette, donne</text><rect x="210" y="166" width="240" height="34" rx="6" fill="#0071e3"/><text x="222" y="189" font-weight="700" fill="#fff">27.658 €</text>
+        </g>
+      </svg>
+      <p class="nota">Fonte: Inarcassa in cifre 2026, tabella 14a, redditi dichiarati per il 2024.</p>
+    </div>
+    <div class="grafico">
+      <h3>Reddito medio degli architetti per età, 2024</h3>
+      <svg viewBox="0 0 900 260" role="img" aria-label="Reddito medio per classe d'età: fino a 30 anni 17.955 euro, picco tra 56 e 60 anni a 48.209 euro">
+        <g font-size="13" fill="#6e6e73" text-anchor="middle">
+          <text x="60" y="250">fino a 30</text><text x="155" y="250">31-35</text><text x="250" y="250">36-40</text><text x="345" y="250">41-45</text><text x="440" y="250">46-50</text><text x="535" y="250">51-55</text><text x="630" y="250">56-60</text><text x="725" y="250">61-65</text><text x="820" y="250">oltre 65</text>
+        </g>
+        <g fill="#0071e3">
+          <rect x="30" y="160" width="60" height="70" rx="5" opacity=".45"/><rect x="125" y="128" width="60" height="102" rx="5" opacity=".55"/><rect x="220" y="102" width="60" height="128" rx="5" opacity=".65"/><rect x="315" y="79" width="60" height="151" rx="5" opacity=".75"/><rect x="410" y="60" width="60" height="170" rx="5" opacity=".85"/><rect x="505" y="50" width="60" height="180" rx="5"/><rect x="600" y="42" width="60" height="188" rx="5"/><rect x="695" y="55" width="60" height="175" rx="5" opacity=".85"/><rect x="790" y="104" width="60" height="126" rx="5" opacity=".6"/>
+        </g>
+        <g font-size="13" font-weight="700" fill="#1d1d1f" text-anchor="middle">
+          <text x="60" y="152">17.955</text><text x="155" y="120">26.161</text><text x="250" y="94">32.733</text><text x="345" y="71">38.750</text><text x="440" y="52">43.741</text><text x="535" y="42">46.224</text><text x="630" y="34">48.209</text><text x="725" y="47">44.801</text><text x="820" y="96">32.212</text>
+        </g>
+      </svg>
+      <p class="nota">Fonte: Inarcassa in cifre 2026, tabella 14a. Un architetto sotto i 30 anni dichiara in media meno di 18.000 euro l'anno.</p>
+    </div>
+    <p class="citazione">In euro di oggi, un architetto over 40 guadagna il 12% meno che nel 2007. Un under 40, il 9% in più.</p>
+    <p class="fonti" style="margin-top:8px">Inarcassa in cifre 2026, tabella 14b: over 40, 42.624 € nel 2024 contro 48.370 € nel 2007 (euro costanti 2024); under 40, 26.967 € contro 24.778 €.</p>
+  </div>
+</section>
+
+<section id="divari" class="grigia">
+  <div class="wrap">
+    <p class="eyebrow">03 | Divari</p>
+    <h2>Donna e al Sud: meno della metà di un uomo al Nord.</h2>
+    <p class="lead">Il divario di genere tra gli architetti è più largo che tra gli ingegneri, e si somma a quello territoriale.</p>
+    <div class="grafico">
+      <h3>Reddito medio 2024 degli architetti per area e genere</h3>
+      <svg viewBox="0 0 900 300" role="img" aria-label="Nord-Ovest uomini 52.900 donne 31.299; Nord-Est 51.926 e 29.749; Centro 42.342 e 26.042; Sud 36.311 e 22.026; Isole 34.453 e 20.816">
+        <g font-size="15" fill="#1d1d1f">
+          <text x="0" y="38">Nord-Ovest</text><rect x="130" y="18" width="582" height="18" rx="4" fill="#6e6e73"/><rect x="130" y="39" width="344" height="18" rx="4" fill="#0071e3"/><text x="722" y="33" font-size="13">52.900</text><text x="484" y="54" font-size="13" fill="#0071e3" font-weight="700">31.299</text>
+          <text x="0" y="96">Nord-Est</text><rect x="130" y="76" width="571" height="18" rx="4" fill="#6e6e73"/><rect x="130" y="97" width="327" height="18" rx="4" fill="#0071e3"/><text x="711" y="91" font-size="13">51.926</text><text x="467" y="112" font-size="13" fill="#0071e3" font-weight="700">29.749</text>
+          <text x="0" y="154">Centro</text><rect x="130" y="134" width="466" height="18" rx="4" fill="#6e6e73"/><rect x="130" y="155" width="286" height="18" rx="4" fill="#0071e3"/><text x="606" y="149" font-size="13">42.342</text><text x="426" y="170" font-size="13" fill="#0071e3" font-weight="700">26.042</text>
+          <text x="0" y="212">Sud</text><rect x="130" y="192" width="399" height="18" rx="4" fill="#6e6e73"/><rect x="130" y="213" width="242" height="18" rx="4" fill="#0071e3"/><text x="539" y="207" font-size="13">36.311</text><text x="382" y="228" font-size="13" fill="#0071e3" font-weight="700">22.026</text>
+          <text x="0" y="270">Isole</text><rect x="130" y="250" width="379" height="18" rx="4" fill="#6e6e73"/><rect x="130" y="271" width="229" height="18" rx="4" fill="#0071e3"/><text x="519" y="265" font-size="13">34.453</text><text x="369" y="286" font-size="13" fill="#0071e3" font-weight="700">20.816</text>
+        </g>
+      </svg>
+      <p class="nota">Grigio: uomini. Blu: donne. Fonte: Inarcassa in cifre 2026, tabella 14a.</p>
+    </div>
+    <div class="carte">
+      <div class="carta"><span class="tag">Percezione</span><h3>Il 78% delle libere professioniste</h3><p>dichiara di aver subito una discriminazione nel lavoro, contro il 28% degli uomini. Soprattutto sul compenso e sul riconoscimento.</p></div>
+      <div class="carta"><span class="tag">Formazione</span><h3>Si laureano prima e meglio</h3><p>Le donne sono il 53,9% dei nuovi iscritti ad Architettura e si laureano in media a 26,1 anni con 105,6, contro 26,8 anni e 103,5.</p></div>
+      <div class="carta"><span class="tag">Mansioni</span><h3>Il lavoro meno pagato</h3><p>Il rapporto CNAPPC collega il divario alle mansioni: alle donne vanno più spesso compiti ripetitivi e meno visibili, pagati meno.</p></div>
+    </div>
+    <p class="fonti" style="margin-top:16px">CNAPPC e Format Research, "La condizione femminile nell'architettura italiana", 5 marzo 2026, 2.832 interviste.</p>
+  </div>
+</section>
+
+<section id="mercato">
+  <div class="wrap">
+    <p class="eyebrow">04 | Il mercato</p>
+    <h2>Finiti i superbonus, il cliente più grande diventa pubblico. Per poco.</h2>
+    <p class="lead">Il Cresme stima che nel 2026 le costruzioni valgano 320,6 miliardi, più dei 301,4 del 2025. Ma la spinta viene dalle opere pubbliche del PNRR, i cui fondi si chiudono il 31 agosto 2026.</p>
+    <div class="grafico">
+      <h3>Manutenzione straordinaria in Italia, miliardi di euro</h3>
+      <svg viewBox="0 0 900 230" role="img" aria-label="Manutenzione straordinaria: 53,9 miliardi nel 2019, 118,6 nel 2022, 84,8 nel 2025">
+        <g text-anchor="middle">
+          <rect x="120" y="128" width="140" height="82" rx="8" fill="#d2d2d7"/><text x="190" y="118" font-size="20" font-weight="700" fill="#1d1d1f">53,9</text><text x="190" y="228" font-size="14" fill="#6e6e73">2019</text>
+          <rect x="380" y="30" width="140" height="180" rx="8" fill="#e5484d"/><text x="450" y="22" font-size="20" font-weight="700" fill="#e5484d">118,6</text><text x="450" y="228" font-size="14" fill="#6e6e73">2022 | picco superbonus</text>
+          <rect x="640" y="81" width="140" height="129" rx="8" fill="#0071e3"/><text x="710" y="71" font-size="20" font-weight="700" fill="#0071e3">84,8</text><text x="710" y="228" font-size="14" fill="#6e6e73">2025</text>
+        </g>
+      </svg>
+      <p class="nota">Fonte: Cresme, 40° Rapporto congiunturale e previsionale, 30 giugno 2026, come riportato da Ingenio e Ance. Il valore del 2025 resta più alto del 2019 di oltre il 50%.</p>
+    </div>
+    <div class="carte">
+      <div class="carta"><span class="tag">2026</span><h3>Opere pubbliche oltre 93 miliardi</h3><p>Diventano il primo mercato delle costruzioni. Il Cresme avverte: dopo il PNRR conterà la capacità di trasformare la spinta straordinaria in programmazione ordinaria.</p></div>
+      <div class="carta"><span class="tag">Europa</span><h3>Il lavoro è ristrutturare</h3><p>Per l'ACE il 49% del lavoro degli architetti europei è ristrutturazione, l'11% patrimonio storico, il 40% costruzione nuova. Il 91% degli studi lavora sulla casa privata.</p></div>
+      <div class="carta"><span class="tag">Quota</span><h3>Gli architetti valgono l'1% del mercato</h3><p>Le costruzioni in Europa valgono circa 2.600 miliardi; gli studi di architettura fatturano 26 miliardi. Il valore del progetto si vende male.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="regole" class="grigia">
+  <div class="wrap">
+    <p class="eyebrow">05 | Le regole che spostano la domanda</p>
+    <h2>Quattro norme da tenere d'occhio.</h2>
+    <div class="carte">
+      <div class="carta"><span class="stato vigore">In vigore</span><h3>Bonus ristrutturazione 2026</h3><p>Detrazione del 50% sull'abitazione principale e del 36% sugli altri immobili, fino a 96.000 euro di spesa (legge di bilancio 2026, legge 199/2025).</p><p class="ai">Il disegno di legge di bilancio 2027, approvato dal Governo il 28 ottobre, proroga le stesse aliquote anche al 2027. È in discussione in Parlamento: fino all'approvazione resta in vigore il taglio previsto.</p></div>
+      <div class="carta"><span class="stato mancato">Scadenza mancata</span><h3>Direttiva case green</h3><p>La direttiva europea sulla prestazione energetica degli edifici (EPBD, 2024/1275) andava recepita entro il 29 maggio 2026. L'Italia non l'ha fatto; il 15 luglio 2026 la Commissione ha avviato la procedura d'infrazione.</p><p class="ai">Oggi nessun obbligo di ristrutturare per i proprietari. Il decreto è atteso nel 2027: chi si prepara ora arriva prima.</p></div>
+      <div class="carta"><span class="stato vigore">In vigore</span><h3>AI e cliente</h3><p>La legge 132/2025, articolo 13, chiede ai professionisti intellettuali di informare il cliente quando usano sistemi di intelligenza artificiale, in modo chiaro e completo.</p><p class="ai">Una riga nel disciplinare d'incarico basta a mettersi in regola e a farne un argomento di trasparenza.</p></div>
+      <div class="carta"><span class="stato vigore">In vigore</span><h3>Equo compenso</h3><p>La legge 49/2023 vieta compensi non proporzionati alla quantità e qualità del lavoro nei rapporti con committenti forti: imprese grandi, banche, assicurazioni, pubblica amministrazione.</p><p class="ai">Vale soprattutto quando lavori per committenti grandi: conoscerla aiuta a trattare.</p></div>
+    </div>
+    <p class="fonti" style="margin-top:16px">Informazione generale, non parere legale. Verifica sempre il testo in vigore su Normattiva e Gazzetta Ufficiale.</p>
+  </div>
+</section>
+
+<section id="nicchie">
+  <div class="wrap">
+    <p class="eyebrow">06 | Dove crescere</p>
+    <h2>Cinque nicchie dove la domanda c'è e gli architetti sono pochi.</h2>
+    <p class="lead">Incrociando i dati: il lavoro sta nella ristrutturazione e nell'energia, il cliente privato resta il principale, le regole spingono verso efficienza, accessibilità e trasparenza.</p>
+    <div class="grafico">
+      <h3>Dove la crescita supera la concorrenza</h3>
+      <p class="legenda-r"><span><i style="background:#0071e3"></i>Potenziale di crescita</span><span><i style="background:#8e8e93"></i>Affollamento dell'offerta</span><span class="verde">Verde: crescita alta, poca concorrenza</span><span class="rosso">Rosso: mercato affollato</span></p>
+      <svg viewBox="0 0 900 530" role="img" aria-label="Radar delle nicchie: sostenibilità ed energia e digitale e BIM hanno alto potenziale e poca offerta; interior design e pratiche edilizie hanno poco potenziale e mercato affollato">
+        <polygon points="450.0,217.0 489.0,239.5 489.0,284.5 450.0,307.0 411.0,284.5 411.0,239.5" fill="none" stroke="#e5e5ea" stroke-width="1.2"/>
+        <polygon points="450.0,172.0 527.9,217.0 527.9,307.0 450.0,352.0 372.1,307.0 372.1,217.0" fill="none" stroke="#e5e5ea" stroke-width="1.2"/>
+        <polygon points="450.0,127.0 566.9,194.5 566.9,329.5 450.0,397.0 333.1,329.5 333.1,194.5" fill="none" stroke="#e5e5ea" stroke-width="1.2"/>
+        <polygon points="450.0,82.0 605.9,172.0 605.9,352.0 450.0,442.0 294.1,352.0 294.1,172.0" fill="none" stroke="#e5e5ea" stroke-width="1.2"/>
+        <line x1="450" y1="262" x2="450.0" y2="82.0" stroke="#e5e5ea" stroke-width="1.2"/>
+        <line x1="450" y1="262" x2="605.9" y2="172.0" stroke="#e5e5ea" stroke-width="1.2"/>
+        <line x1="450" y1="262" x2="605.9" y2="352.0" stroke="#e5e5ea" stroke-width="1.2"/>
+        <line x1="450" y1="262" x2="450.0" y2="442.0" stroke="#e5e5ea" stroke-width="1.2"/>
+        <line x1="450" y1="262" x2="294.1" y2="352.0" stroke="#e5e5ea" stroke-width="1.2"/>
+        <line x1="450" y1="262" x2="294.1" y2="172.0" stroke="#e5e5ea" stroke-width="1.2"/>
+        <text x="456" y="176" font-size="11" fill="#8e8e93">50</text>
+        <text x="456" y="86" font-size="11" fill="#8e8e93">100</text>
+        <polygon points="450.0,208.0 551.3,203.5 496.8,289.0 450.0,406.0 301.9,347.5 309.7,181.0" fill="#8e8e93" fill-opacity=".18" stroke="#8e8e93" stroke-width="2.5" stroke-linejoin="round"/>
+        <circle cx="450.0" cy="208.0" r="4.5" fill="#8e8e93"/>
+        <circle cx="551.3" cy="203.5" r="4.5" fill="#8e8e93"/>
+        <circle cx="496.8" cy="289.0" r="4.5" fill="#8e8e93"/>
+        <circle cx="450.0" cy="406.0" r="4.5" fill="#8e8e93"/>
+        <circle cx="301.9" cy="347.5" r="4.5" fill="#8e8e93"/>
+        <circle cx="309.7" cy="181.0" r="4.5" fill="#8e8e93"/>
+        <polygon points="450.0,100.0 582.5,185.5 574.7,334.0 450.0,352.0 379.9,302.5 387.6,226.0" fill="#0071e3" fill-opacity=".16" stroke="#0071e3" stroke-width="2.5" stroke-linejoin="round"/>
+        <circle cx="450.0" cy="100.0" r="4.5" fill="#0071e3"/>
+        <circle cx="582.5" cy="185.5" r="4.5" fill="#0071e3"/>
+        <circle cx="574.7" cy="334.0" r="4.5" fill="#0071e3"/>
+        <circle cx="450.0" cy="352.0" r="4.5" fill="#0071e3"/>
+        <circle cx="379.9" cy="302.5" r="4.5" fill="#0071e3"/>
+        <circle cx="387.6" cy="226.0" r="4.5" fill="#0071e3"/>
+        <text x="450" y="34" text-anchor="middle" font-size="16" font-weight="700" fill="#1e7a4b">Sostenibilità ed energia</text>
+        <text x="450" y="52" text-anchor="middle" font-size="13" fill="#6e6e73">crescita 90 | affollamento 30</text>
+        <text x="627" y="156" text-anchor="start" font-size="16" font-weight="700" fill="#1d1d1f">Restauro e patrimonio</text>
+        <text x="627" y="174" text-anchor="start" font-size="13" fill="#6e6e73">crescita 85 | affollamento 65</text>
+        <text x="627" y="360" text-anchor="start" font-size="16" font-weight="700" fill="#1e7a4b">Digitale e BIM</text>
+        <text x="627" y="378" text-anchor="start" font-size="13" fill="#6e6e73">crescita 80 | affollamento 30</text>
+        <text x="450" y="480" text-anchor="middle" font-size="16" font-weight="700" fill="#b3262b">Urbanistica</text>
+        <text x="450" y="498" text-anchor="middle" font-size="13" fill="#6e6e73">crescita 50 | affollamento 80</text>
+        <text x="273" y="360" text-anchor="end" font-size="16" font-weight="700" fill="#b3262b">Interior design</text>
+        <text x="273" y="378" text-anchor="end" font-size="13" fill="#6e6e73">crescita 45 | affollamento 95</text>
+        <text x="273" y="156" text-anchor="end" font-size="16" font-weight="700" fill="#b3262b">Pratiche edilizie</text>
+        <text x="273" y="174" text-anchor="end" font-size="13" fill="#6e6e73">crescita 40 | affollamento 90</text>
+      </svg>
+      <p class="nota">Più l'area blu esce rispetto a quella grigia, più c'è spazio per chi entra. Punteggi qualitativi da 0 a 100 stimati nella ricerca approfondita del 27 dicembre 2025 (fonte 9), ridisegnati. Si appoggiano a tre dati: la carenza di circa 15.000 professionisti per le case green (fonte 12), il Rapporto OICE 2024 sulle gare BIM (fonte 13) e l'ACE Sector Study 2024 (fonte 2). Indicano una direzione, non una misura.</p>
+    </div>
+    <div class="carte">
+      <div class="carta"><span class="tag">1 | Energia</span><h3>Prepararsi alle case green</h3><p>Diagnosi, piani di ristrutturazione per fasi, condomini. Il decreto arriverà: chi ha già un metodo e casi da mostrare sarà il primo a cui si rivolgono.</p><p class="ai">Con l'AI: leggere APE, capitolati e normativa in un notebook; simulare scenari da spiegare al cliente.</p></div>
+      <div class="carta"><span class="tag">2 | Invecchiamento</span><h3>Case per chi resta a casa</h3><p>Circa un italiano su quattro ha più di 65 anni. Adattare bagni, accessi e percorsi è lavoro diffuso, piccolo e continuo.</p><p class="ai">Con l'AI: visualizzare la soluzione prima di proporla, così il cliente anziano e i figli capiscono.</p></div>
+      <div class="carta"><span class="tag">3 | Patrimonio</span><h3>Restauro e riuso</h3><p>Per l'ACE l'11% del lavoro degli architetti europei riguarda edifici storici. In Italia centri storici e vincoli sono ovunque: chi conosce archivi, catasti storici e Soprintendenza parte avvantaggiato.</p><p class="ai">Con l'AI: ricostruire la storia di un immobile da decine di documenti scansionati.</p></div>
+      <div class="carta"><span class="tag">4 | Visualizzazione</span><h3>Far vedere prima di costruire</h3><p>Il cliente porta già i render fatti da sé. Il valore si sposta dal render alla regia: luce, materiali, coerenza, scelte.</p><p class="ai">Con l'AI: dal disegno o dal 3D a immagini da impaginare in un giorno. Tema del workshop ArchiViz.</p></div>
+      <div class="carta"><span class="tag">5 | Servizi alle imprese</span><h3>Lavorare per chi vende</h3><p>Imprese, serramentisti, produttori di arredo hanno bisogno di progetti, immagini e contenuti tecnici, e pagano con continuità.</p><p class="ai">Con l'AI: schede tecniche, presentazioni e contenuti a partire dai loro cataloghi. Tema del workshop Marketing.</p></div>
+    </div>
+    <p class="fonti" style="margin-top:16px">Le nicchie sono una mia lettura dei dati citati in questa pagina, non una previsione di una fonte. Popolazione over 65: ISTAT, indicatori demografici (circa un residente su quattro).</p>
+  </div>
+</section>
+
+<section id="nanismo" class="grigia">
+  <div class="wrap">
+    <p class="eyebrow">07 | Studi piccoli</p>
+    <h2>Da soli si sopravvive. Insieme si cresce.</h2>
+    <p class="lead">In Europa il 70% degli studi è fatto da una persona, e il numero di studi individuali cresce. È un modello agile, ma con tre limiti: non partecipi alle gare, paghi da solo software e formazione, non puoi specializzarti senza perdere clienti.</p>
+    <div class="carte">
+      <div class="carta"><span class="tag">Reti</span><h3>Restare indipendenti, lavorare insieme</h3><p>Una rete tra professionisti, un'associazione o una società tra professionisti permette di presentarsi come gruppo mantenendo ciascuno la propria partita IVA.</p></div>
+      <div class="carta"><span class="tag">Costi</span><h3>Dividere quello che costa</h3><p>Dal 2025 il BIM è obbligatorio nei lavori pubblici sopra i 2 milioni di euro. Una licenza Autodesk AEC Collection costa 3.892 euro l'anno a postazione, più la formazione. In una rete bastano poche postazioni e un BIM manager in comune per entrare nei bandi.</p></div>
+      <div class="carta"><span class="tag">Gare</span><h3>Entrare nei concorsi</h3><p>Secondo l'ACE solo il 6% degli studi europei ha partecipato a una gara pubblica nel 2023. Le barriere sono burocrazia e costi: in gruppo pesano meno.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="piano">
+  <div class="wrap">
+    <p class="eyebrow">08 | Il piano</p>
+    <h2>Cinque mosse per i prossimi sei mesi.</h2>
+    <ol class="passi">
+      <li><span><b>Scegli una nicchia.</b>Una sola, tra quelle sopra o un'altra che conosci bene. Scrivi in una frase per chi lavori e quale problema risolvi.</span></li>
+      <li><span><b>Togli il lavoro ripetitivo.</b>Verbali, email, capitolati, confronto preventivi: con l'AI recuperi ore ogni settimana. Misura il tempo prima e dopo.</span></li>
+      <li><span><b>Fai vedere prima.</b>Immagini credibili già al primo incontro cambiano il modo in cui il cliente decide e quanto è disposto a pagare.</span></li>
+      <li><span><b>Fatti trovare da chi cerchi.</b>Contenuti utili per il tuo cliente ideale, non per i colleghi. Un piano editoriale semplice e costante.</span></li>
+      <li><span><b>Non restare sola, o solo.</b>Un gruppo di colleghi con competenze diverse per dividere costi, gare e clienti.</span></li>
+    </ol>
+    <p class="lead" style="margin-top:28px">Le mosse 2, 3 e 4 sono i temi dei workshop Productivity, ArchiViz e Marketing.</p>
+    <a class="btn" href="https://andrealucarelli.com/calendar">Calendario dei workshop</a>
+  </div>
+</section>
+
+<section id="fonti" class="fonti">
+  <div class="wrap">
+    <p class="eyebrow">Fonti</p>
+    <h2>Da dove vengono i numeri.</h2>
+    <div class="metodo" id="metodo"><b>Come è fatto questo report.</b> Il punto di partenza è una ricerca approfondita (deep research) fatta con Gemini il 27 dicembre 2025, su 36 fonti. A novembre 2026 l'ho ripresa con un agente AI, Claude: ogni numero è stato cercato di nuovo nella fonte originale più recente, corretto dove era cambiato o sbagliato, e tolto quando non era verificabile. Le scelte e le conclusioni sono mie.</div>
+    <p>Fonti lette il 25 e 26 novembre 2026. Dove un dato arriva da una sintesi di stampa e non dal documento originale, è indicato.</p>
+    <ol>
+      <li>Inarcassa, Funzione Studi e Ricerche, <a href="https://www.inarcassa.it/sites/default/files/legacy/documents/2025-06/Inarcassa_in_Cifre_2025.pdf">Inarcassa in cifre 2026. Statistiche su iscritti e pensionati, redditi e volume d'affari</a>, 25 giugno 2026. Tabelle 1a (iscritti 2025), 14a e 14b (redditi 2024). Letto nel documento originale.</li>
+      <li>Architects' Council of Europe, <a href="https://ace-cae.eu/wp-content/uploads/2025/04/2024-ACE-Sector-Study-EN-04042025.pdf">The Architectural Profession in Europe 2024. Sector Study</a>, Mirza &amp; Nacey Research, aprile 2025. Pagine 2-5 lette nell'originale (580.000 architetti, 70% studi individuali, 49% ristrutturazione, 6% gare pubbliche, fatturato 26 miliardi). Densità per l'Italia (152.000 architetti, 2,6 ogni 1.000 abitanti) dalla tabella per Paese riportata nelle sintesi del documento.</li>
+      <li>CNAPPC e Format Research, <a href="https://formatresearch.com/2026/03/05/gender-gap-e-architettura-cnappc/">La condizione femminile nell'architettura italiana</a>, 5 marzo 2026. Sintesi di Format Research e di professioneArchitetto.</li>
+      <li>Cresme, <a href="https://www.cresme.it/rapporto/40-rapporto-congiunturale-e-previsionale-cresme">40° Rapporto congiunturale e previsionale. Il mercato delle costruzioni 2026-2029</a>, 30 giugno 2026. Cifre dalle sintesi di <a href="https://www.ingenio-web.it/articoli/mercato-costruzioni-2026-bellicini-cresme-la-fine-degli-incentivi-apre-nuova-fase-competitiva/">Ingenio</a> e Ance (il rapporto completo è a pagamento).</li>
+      <li>Legge di bilancio 2026, legge 30 dicembre 2025 n. 199; disegno di legge di bilancio 2027 approvato dal Consiglio dei ministri il 28 ottobre 2026 (stato al 17 novembre: esame in commissione Bilancio della Camera). Sintesi: <a href="https://ance.it/2026/02/bonus-ristrutturazioni-online-la-guida-aggiornata-con-le-novita-della-legge-di-bilancio-2026/">Ance</a>.</li>
+      <li>Direttiva (UE) 2024/1275 sulla prestazione energetica nell'edilizia; stato del recepimento: <a href="https://www.edilportale.com/news/amp/2026/10/risparmio-energetico/direttiva-case-green-a-che-punto-e-il-recepimento_112238_27.html">Edilportale, ottobre 2026</a>.</li>
+      <li>Legge 23 settembre 2025 n. 132, disposizioni in materia di intelligenza artificiale, articolo 13; legge 21 aprile 2023 n. 49, equo compenso delle prestazioni professionali.</li>
+      <li>ISTAT, indicatori demografici: le persone con 65 anni e più sono circa un quarto dei residenti. Da verificare sull'ultimo comunicato prima di citare la cifra esatta.</li>
+      <li>Gemini, ricerca approfondita "Analisi strategica di business intelligence della professione di architetto in Italia (2024-2030)", 27 dicembre 2025, con la sua pagina interattiva (grafico "Nicchie di mercato in crescita"). Documento di lavoro, non pubblicato.</li>
+      <li>Autodesk, <a href="https://www.autodesk.com/it/collections/architecture-engineering-construction/overview">AEC Collection, prezzo dell'abbonamento annuale</a> per l'Italia, letto il 26 novembre 2026.</li>
+      <li>Decreto legislativo 31 marzo 2023 n. 36, Codice dei contratti pubblici, articolo 43: obbligo dei metodi di gestione informativa digitale (BIM) dal 1° gennaio 2025 per i lavori sopra i 2 milioni di euro.</li>
+      <li>Alternativa Sostenibile, <a href="https://www.alternativasostenibile.it/articolo/case-green-italia-mancano-15mila-professionisti-specializzati-nell%E2%80%99edilizia-sostenibile">Case green: in Italia mancano 15mila professionisti specializzati</a>. Sintesi di stampa, citata nella ricerca di dicembre 2025.</li>
+      <li>OICE, <a href="https://www.ingenio-web.it/articoli/analisi-delle-gare-bim-2024-dal-rapporto-oice-criticita-e-prospettive-di-sviluppo/">Rapporto sulle gare BIM 2024</a>, sintesi di Ingenio.</li>
+    </ol>
+  </div>
+</section>
+
+<footer><div class="wrap">Andrea Lucarelli | ai.andrealucarelli.com | Aggiornato al 26 novembre 2026. Puoi condividerlo citando la fonte.</div></footer>
+</body>
+</html>

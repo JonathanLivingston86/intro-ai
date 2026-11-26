@@ -1,0 +1,8 @@
+# Materiale locale: mai nel repository pubblico.
+kit-presentatore/
+materiali-privati/
+# Residui
+zz-*
+*.pdf
+.DS_Store
+Thumbs.db
